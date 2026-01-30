@@ -1,0 +1,153 @@
+2026-01-30 14:25:06
+Оповещение
+Общее оповещение
+*****
+ВСЕ ДОБАВЬТЕ Preppy В ДРУЗЬЯ НА КФЕ КТО ДОБАВИТ БУДЕТ 1 ДИП НА РЕСПЕ 
+
+
+2026-01-30 14:23:41
+Оповещение
+Общее оповещение
+*****
+https://imgur.com/a/e1dWY0k
+
+
+2026-01-30 14:21:50
+Оповещение
+Общее оповещение
+*****
+вкусняшка
+
+
+#include <bits/stdc++.h>
+
+#define all(x) x.begin(), x.end()
+#define pii pair <int, int>
+#define pb push_back
+#define int long long
+
+using namespace std;
+
+struct Edge {
+    int from, to;
+    int cap, flow;
+};
+
+int n, m;
+
+vector <Edge> edge;
+vector <int> g[5050];
+
+vector <int> lvl;
+vector <int> cnt;
+
+bool bfs() {
+    fill(all(lvl), 0);
+    queue <int> q;
+
+    q.push(1);
+    lvl[1] = 1;
+
+    while(!q.empty()) {
+        int v = q.front();
+        q.pop();
+
+        for(auto to : g[v]) {
+            Edge &e = edge[to];
+
+            if(e.cap - e.flow == 0 || lvl[e.to] != 0)
+                continue;
+
+            lvl[e.to] = lvl[e.from] + 1;
+            q.push(e.to);
+        }
+    }
+
+    return lvl[n] != 0;
+}
+
+int dfs(int v = 1, int flow = 1e9) {
+    if(flow == 0 || v == n)
+        return flow;
+
+    for(int &i = cnt[v]; i < g[v].size(); i++) {
+        Edge &e = edge[g[v][i]];
+
+        if(e.cap - e.flow == 0 || lvl[v] + 1 != lvl[e.to])
+            continue;
+
+        int x = dfs(e.to, min(flow, e.cap - e.flow));
+
+        if(x) {
+            e.flow += x;
+            edge[g[v][i] ^ 1].flow -= x;
+            return x;
+        }
+    }
+
+    return 0;
+}
+
+void add(int u, int v, int c) {
+    g[u].pb(edge.size());
+    edge.pb({u, v, c, 0});
+    g[v].pb(edge.size());
+    edge.pb({v, u, 0, 0});
+}
+
+int MaxFlow() {
+    int flow = 0;
+
+    while(bfs()) {
+        fill(all(cnt), 0);
+        while(int res = dfs())
+            flow += res;
+    }
+
+    return flow;
+}
+
+int32_t main() {
+
+    #ifdef APPLE
+        freopen("input.txt","r",stdin);
+        freopen("output.txt","w",stdout);
+    #else
+//        freopen("split.in","r",stdin);
+//        freopen("split.out","w",stdout);
+    #endif
+
+    ios_base::sync_with_stdio(0);
+    cout.tie(0);
+    cin.tie(0);
+
+    cin >> n >> m;
+
+    lvl.resize(n + 1);
+    cnt.resize(n + 1);
+
+    for(int i = 1; i <= m; i++) {
+        int u; cin >> u;
+        int v; cin >> v;
+        int c; cin >> c;
+
+        add(u, v, c);
+    }
+
+    cout << MaxFlow() << '\n';
+
+}
+
+
+2026-01-30 11:03:18
+Оповещение
+Общее оповещение
+*****
+https://imgur.com/a/e1dWY0k
+
+
+2026-01-30 11:00:00
+Оповещение
+Общее оповещение
+*****
+https://imgur.com/a/Uzy4zSv
