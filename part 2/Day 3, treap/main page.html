@@ -1,0 +1,3580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!-- saved from url=(0054)https://codeforces.com/group/thOWHpwJb2/contest/671192 -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+        <script type="text/javascript" async="" src="./main page_files/analytics.js"></script><script type="text/javascript" async="" src="./main page_files/js"></script><script async="" src="./main page_files/js(1)"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-743380-5');
+        </script>
+
+    
+    <meta name="X-Csrf-Token" content="28dc53a1bfb2cda64095ed82556088f3">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=0.01">
+    <meta name="robots" content="noai">
+    <meta name="robots" content="noimageai">
+
+    <script type="text/javascript" src="./main page_files/jquery-1.8.3.js"></script>
+    <script type="application/javascript">
+        window.locale = "ru";
+        window.standaloneContest = false;
+        function adjustViewport() {
+            var screenWidthPx = Math.min($(window).width(), window.screen.width);
+            var siteWidthPx = 1100; // min width of site
+            var ratio = Math.min(screenWidthPx / siteWidthPx, 1.0);
+            var viewport = "width=device-width, initial-scale=" + ratio;
+            $('#viewport').attr('content', viewport);
+            var style = $('<style>html * { max-height: 1000000px; }</style>');
+            $('html > head').append(style);
+        }
+
+        if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            adjustViewport();
+        }
+
+        /* Protection against trailing dot in domain. */
+        let hostLength = window.location.host.length;
+        if (hostLength > 1 && window.location.host[hostLength - 1] === '.') {
+            window.location = window.location.protocol + "//" + window.location.host.substring(0, hostLength - 1);
+        }
+    </script>
+
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta http-equiv="profileName" content="h1">
+    <meta name="google-site-verification" content="OTd2dN5x4nS4OPknPI9JFg36fKxjqY0i1PSfFPv_J90">
+    <meta property="fb:admins" content="100001352546622">
+    <meta property="og:image" content="//codeforces.com/codeforces.org/s/13701/images/codeforces-sponsored-by-ton.png">
+    <link rel="image_src" href="./main page_files/codeforces-sponsored-by-ton.png">
+    <meta property="og:title" content="Основное - Нервоtreapка (топ 5 способов написать трип) - Codeforces">
+    <meta property="og:description" content="">
+    
+    <meta property="og:site_name" content="Codeforces">
+    <meta name="uc" content="c72f533a01d877dc213325254d2a208159cf13ed">
+    <meta name="usmc" content="dcc2e8b9e81343ec4cc51a9348b4841da7705212">
+    
+    <meta name="cc" content="093445600421a0041ac6235f2095a35654162161">
+    <meta name="pc" content="ecd4857f2a2e1d728a21f8e427eeca153ccc91e3">
+    
+    <meta name="utc_offset" content="+03:00">
+    <meta name="verify-reformal" content="f56f99fd7e087fb6ccb48ef2">
+    <title>Основное - Нервоtreapка (топ 5 способов написать трип) - Codeforces</title>
+        <meta name="description" content="Codeforces. Соревнования и олимпиады по информатике и программированию, сообщество программистов">
+        <meta name="keywords" content="программирование информатика контест олимпиада алгоритмы c++ java графы vkcup">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="./main page_files/font-awesome.min.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/line-awesome.min.css" type="text/css" charset="utf-8">
+
+        <link rel="preconnect" href="https://challenges.cloudflare.com/">
+        <link rel="dns-prefetch" href="https://challenges.cloudflare.com/">
+        <style type="text/css">@font-face {font-family:PT Sans Narrow;font-style:normal;font-weight:400;src:url(/cf-fonts/s/pt-sans-narrow/5.0.19/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:PT Sans Narrow;font-style:normal;font-weight:400;src:url(/cf-fonts/s/pt-sans-narrow/5.0.19/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:PT Sans Narrow;font-style:normal;font-weight:400;src:url(/cf-fonts/s/pt-sans-narrow/5.0.19/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:PT Sans Narrow;font-style:normal;font-weight:400;src:url(/cf-fonts/s/pt-sans-narrow/5.0.19/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:PT Sans Narrow;font-style:normal;font-weight:700;src:url(/cf-fonts/s/pt-sans-narrow/5.0.19/cyrillic-ext/700/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:PT Sans Narrow;font-style:normal;font-weight:700;src:url(/cf-fonts/s/pt-sans-narrow/5.0.19/latin/700/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:PT Sans Narrow;font-style:normal;font-weight:700;src:url(/cf-fonts/s/pt-sans-narrow/5.0.19/cyrillic/700/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:PT Sans Narrow;font-style:normal;font-weight:700;src:url(/cf-fonts/s/pt-sans-narrow/5.0.19/latin-ext/700/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}</style>
+        <style type="text/css">@font-face {font-family:Cuprum;font-style:normal;font-weight:400;src:url(/cf-fonts/s/cuprum/5.0.18/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Cuprum;font-style:normal;font-weight:400;src:url(/cf-fonts/s/cuprum/5.0.18/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Cuprum;font-style:normal;font-weight:400;src:url(/cf-fonts/s/cuprum/5.0.18/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Cuprum;font-style:normal;font-weight:400;src:url(/cf-fonts/s/cuprum/5.0.18/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Cuprum;font-style:normal;font-weight:400;src:url(/cf-fonts/s/cuprum/5.0.18/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}</style>
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="https://codeforces.com/codeforces.org/s/13701/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://codeforces.com/codeforces.org/s/13701/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://codeforces.com/codeforces.org/s/13701/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://codeforces.com/codeforces.org/s/13701/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://codeforces.com/codeforces.org/s/13701/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://codeforces.com/codeforces.org/s/13701/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://codeforces.com/codeforces.org/s/13701/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://codeforces.com/codeforces.org/s/13701/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://codeforces.com/codeforces.org/s/13701/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://codeforces.com/codeforces.org/s/13701/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://codeforces.com/codeforces.org/s/13701/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://codeforces.com/codeforces.org/s/13701/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://codeforces.com/codeforces.org/s/13701/favicon-16x16.png">
+    <link rel="manifest" href="https://codeforces.com/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="//codeforces.com/codeforces.org/s/13701/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--CombineResourcesFilter-->
+    <link rel="stylesheet" href="./main page_files/prettify.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/clear.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/style.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/ttypography.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/problem-statement.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/second-level-menu.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/roundbox.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/datatable.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/table-form.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/topic.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/jquery.jgrowl.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/facebox.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/jquery.wysiwyg.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/jquery.autocomplete.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/codeforces.datepick.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/colorbox.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/jquery.drafts.css" type="text/css" charset="utf-8">
+        <link rel="stylesheet" href="./main page_files/community.css" type="text/css" charset="utf-8">
+        <link rel="stylesheet" href="./main page_files/groups.css" type="text/css" charset="utf-8">
+        <link rel="stylesheet" href="./main page_files/sidebar-menu.css" type="text/css" charset="utf-8">
+
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config;executed=true">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+    });
+    MathJax.Hub.Register.StartupHook("End", function () {
+        Codeforces.runMathJaxListeners();
+    });
+    </script>
+    <script type="text/javascript" async="" src="./main page_files/MathJax.js">
+    </script>
+    <!-- /MathJax -->
+
+    <script type="text/javascript" src="./main page_files/prettify.js"></script>
+    <script type="text/javascript" src="./main page_files/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="./main page_files/pushstream.js"></script>
+    <script type="text/javascript" src="./main page_files/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="./main page_files/jquery.lavalamp.min.js"></script>
+    <script type="text/javascript" src="./main page_files/jquery.jgrowl.js"></script>
+    <script type="text/javascript" src="./main page_files/jquery.swipe.js"></script>
+    <script type="text/javascript" src="./main page_files/jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="./main page_files/facebox.js"></script>
+    <script type="text/javascript" src="./main page_files/jquery.wysiwyg.js"></script>
+    <script type="text/javascript" src="./main page_files/wysiwyg.colorpicker.js"></script>
+    <script type="text/javascript" src="./main page_files/wysiwyg.table.js"></script>
+    <script type="text/javascript" src="./main page_files/wysiwyg.image.js"></script>
+    <script type="text/javascript" src="./main page_files/wysiwyg.link.js"></script>
+    <script type="text/javascript" src="./main page_files/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="./main page_files/jquery.datepick.js"></script>
+    <script type="text/javascript" src="./main page_files/jquery.ie6blocker.js"></script>
+    <script type="text/javascript" src="./main page_files/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="./main page_files/jquery.ba-bbq.js"></script>
+    <script type="text/javascript" src="./main page_files/jquery.drafts.js"></script>
+    <script type="text/javascript" src="./main page_files/clipboard.min.js"></script>
+    <script type="text/javascript" src="./main page_files/autosize.min.js"></script>
+    <script type="text/javascript" src="./main page_files/sjcl.js"></script>
+    <script type="text/javascript" src="./main page_files/codeforces-options.js"></script>
+    <script type="text/javascript" src="./main page_files/codeforces.js"></script>
+    <script type="text/javascript" src="./main page_files/EventCatcher.js"></script>
+    <script type="text/javascript" src="./main page_files/preparedVerdictFormats-ru.js"></script>
+    <script type="text/javascript" src="./main page_files/confetti.min.js"></script>
+    <script type="text/javascript" src="./main page_files/purify.min.js"></script>
+    <!--/CombineResourcesFilter-->
+
+    <link rel="stylesheet" href="./main page_files/style(1).css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./main page_files/style(2).css" type="text/css" charset="utf-8">
+
+
+    <script type="text/javascript" src="./main page_files/jquery.markitup.js"></script>
+    <script type="text/javascript" src="./main page_files/set.js"></script>
+
+    <!--[if IE]>
+    <style>
+        #sidebar {
+            padding-left: 1em;
+            margin: 1em 1em 1em 0;
+        }
+    </style>
+    <![endif]-->
+
+        <script type="text/javascript" src="./main page_files/jquery.datepick-ru.js"></script>
+
+
+
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888; display: contents}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MathJax .MJX-monospace {font-family: monospace}
+.MathJax .MJX-sans-serif {font-family: sans-serif}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax:focus, body :focus .MathJax {display: inline-table}
+.MathJax.MathJax_FullWidth {text-align: center; display: table-cell!important; width: 10000em!important}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!important; vertical-align: 0!important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none; box-sizing: content-box}
+.MathJax nobr {white-space: nowrap!important}
+.MathJax img {display: inline!important; float: none!important}
+.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_test {font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow: hidden; height: 1px}
+.MathJax_test.mjx-test-display {display: table!important}
+.MathJax_test.mjx-test-inline {display: inline!important; margin-right: -1px}
+.MathJax_test.mjx-test-default {display: block!important; clear: both}
+.MathJax_ex_box {display: inline-block!important; position: absolute; overflow: hidden; min-height: 0; max-height: none; padding: 0; border: 0; margin: 0; width: 1px; height: 60ex}
+.MathJax_em_box {display: inline-block!important; position: absolute; overflow: hidden; min-height: 0; max-height: none; padding: 0; border: 0; margin: 0; width: 1px; height: 60em}
+.mjx-test-inline .MathJax_left_box {display: inline-block; width: 0; float: left}
+.mjx-test-inline .MathJax_right_box {display: inline-block; width: 0; float: right}
+.mjx-test-display .MathJax_right_box {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Blank; src: url('about:blank')}
+.MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+<body class=" "><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none;"></div><span style="display:none;" class="csrf-token" data-csrf="28dc53a1bfb2cda64095ed82556088f3">&nbsp;</span>
+
+<!-- .notificationTextCleaner used in Codeforces.showAnnouncements() -->
+<div class="notificationTextCleaner" style="font-size: 0"></div>
+<div class="button-up" style="display: none; opacity: 0.7; width: 30px; height: 100%; position: fixed; left: 0px; top: 0px; cursor: pointer; text-align: center; line-height: 30px; color: rgb(211, 219, 228); font-weight: bold; font-size: 20px;"><i class="icon-circle-arrow-up"></i></div>
+<div class="verdictPrototypeDiv" style="display: none;"></div>
+
+<!-- Codeforces JavaScripts. -->
+<script type="text/javascript">
+    String.prototype.hashCode = function() {
+        var hash = 0, i, chr;
+        if (this.length === 0) return hash;
+        for (i = 0; i < this.length; i++) {
+            chr   = this.charCodeAt(i);
+            hash  = ((hash << 5) - hash) + chr;
+            hash |= 0; // Convert to 32bit integer
+        }
+        return hash;
+    };
+
+    var queryMobile = Codeforces.queryString.mobile;
+    if (queryMobile === "true" || queryMobile === "false") {
+        Codeforces.putToStorage("useMobile", queryMobile === "true");
+    } else {
+        var useMobile = Codeforces.getFromStorage("useMobile");
+        if (useMobile === true || useMobile === false) {
+            if (useMobile != false) {
+                Codeforces.redirect(Codeforces.updateUrlParameter(document.location.href, "mobile", useMobile));
+            }
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    if (window.parent.frames.length > 0) {
+        window.stop();
+    }
+</script>
+
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    (function () {
+        jQuery.expr[':'].containsCI = function(elem, index, match) {
+            return !match || !match.length || match.length < 4 || !match[3] || (
+                    elem.textContent || elem.innerText || jQuery(elem).text() || ''
+            ).toLowerCase().indexOf(match[3].toLowerCase()) >= 0;
+        }
+    }(jQuery));
+
+    $.ajaxPrefilter(function(options, originalOptions, xhr) {
+        var csrf = Codeforces.getCsrfToken();
+
+        if (csrf) {
+            var data = originalOptions.data;
+            if (originalOptions.data !== undefined) {
+                if (Object.prototype.toString.call(originalOptions.data) === '[object String]') {
+                    data = $.deparam(originalOptions.data);
+                }
+            } else {
+                data = {};
+            }
+            options.data = $.param($.extend(data, { csrf_token: csrf }));
+        }
+    });
+
+    window.getCodeforcesServerTime = function(callback) {
+        $.post("/data/time", {}, callback, "json");
+    }
+
+    window.updateTypography = function () {
+        $("div.ttypography code").addClass("tt");
+        $("div.ttypography pre>code").addClass("prettyprint").removeClass("tt");
+        $("div.ttypography table").addClass("bordertable");
+        prettyPrint();
+    }
+
+    $.ajaxSetup({ scriptCharset: "utf-8" ,contentType: "application/x-www-form-urlencoded; charset=UTF-8", headers: {
+        'X-Csrf-Token': Codeforces.getCsrfToken()
+    }, beforeSend: function(jqXHR, settings) {
+        const url = new URL(settings.url, window.location.href);
+        const urlHref = url.href;
+        url.searchParams.set('rv', Math.random().toString(36).substr(2, 9)); // Generate a random value
+        settings.url = url.href;
+    }});
+
+    window.updateTypography();
+    Codeforces.signForms();
+    Codeforces.applyDatatableJs("Hold Ctrl+Alt and click to hide column. Also, you can drag&drop columns to reorder them.");
+
+    setTimeout(function() {
+        $(".second-level-menu-list").lavaLamp({
+            fx: "backout",
+            speed: 700
+        });
+    }, 100);
+
+
+    Codeforces.countdown();
+    $("a[rel='photobox']").colorbox();
+
+        var count = 0;
+
+        function getDelay() {
+            var delay = 0;
+            var last = Codeforces.getFromStorage("LastOnlineTimeUpdaterMillis", 0);
+            if (last && last != null) {
+                var period = count < 20 ? 360 * 1000 : 600 * 1000; // 6 or 10 minutes.
+                delay = period - (new Date().getTime() - last);
+                if (delay < 0)
+                    delay = 0;
+            }
+            return delay;
+        }
+
+        window.setInterval(function () {
+            if (getDelay() <= 0 && count < 120) {
+                ++count;
+                Codeforces.ping("/data/update-online");
+            }
+        }, 5000);
+
+        var handle = "Igor4183";
+        $("a.rated-user:contains(" + handle + "), span.participant:contains(" + handle + ")").each(function () {
+            if ($(this).text() == handle) {
+                var td = $(this).parent();
+                var tr = $(this).parent().parent();
+                if (td.is("td") && tr.is("tr") && !tr.hasClass("disable-highlight-self")) {
+                    info(handle);
+                    tr.addClass("highlighted-row");
+                }
+            }
+        });
+
+    function showAnnouncements(json) {
+        if (json.t === "a") {
+            setTimeout(function() {
+               Codeforces.showAnnouncements(json.d, "ru");
+            }, Math.random() * 500);
+        }
+    }
+
+    function showEventCatcherUserMessage(json) {
+        if (json.t === "s") {
+            var points = json.d[5];
+            var passedTestCount = json.d[7];
+            var judgedTestCount = json.d[8];
+            var verdict = preparedVerdictFormats[json.d[12]];
+            var verdictPrototypeDiv = $(".verdictPrototypeDiv");
+            verdictPrototypeDiv.html(verdict);
+            if (judgedTestCount != null && judgedTestCount != undefined) {
+                verdictPrototypeDiv.find(".verdict-format-judged").text(judgedTestCount);
+            }
+            if (passedTestCount != null && passedTestCount != undefined) {
+                verdictPrototypeDiv.find(".verdict-format-passed").text(passedTestCount);
+            }
+            if (points != null && points != undefined) {
+                verdictPrototypeDiv.find(".verdict-format-points").text(points);
+            }
+            Codeforces.showMessage(verdictPrototypeDiv.text());
+        }
+    }
+
+    $(".clickable-title").each(function() {
+        var title = $(this).attr("data-title");
+        if (title) {
+            var tmp = document.createElement("DIV");
+            tmp.innerHTML = title;
+            $(this).attr("title", tmp.textContent || tmp.innerText || "");
+        }
+    });
+
+    $(".clickable-title").click(function() {
+        const title = $(this).attr("data-title");
+        const clazz = $(this).attr("data-clazz");
+        const props = {};
+        if (typeof (clazz) !== 'undefined') {
+            props['clazz'] = clazz;
+        }
+        if (title) {
+            Codeforces.alert(title, null, null, props);
+        } else {
+            Codeforces.alert($(this).attr("title"), null, null, props);
+        }
+    }).css("position", "relative").css("bottom", "3px");
+
+        Codeforces.showDelayedMessage();
+
+    Codeforces.reformatTimes();
+
+    //Codeforces.initializePubSub();
+    if (window.codeforcesOptions.subscribeServerUrl) {
+        window.eventCatcher = new EventCatcher(
+            window.codeforcesOptions.subscribeServerUrl,
+            [
+                Codeforces.getGlobalChannel(),
+                Codeforces.getUserChannel(),
+                Codeforces.getUserShowMessageChannel(),
+                Codeforces.getContestChannel(),
+                Codeforces.getParticipantChannel(),
+                Codeforces.getTalkChannel()
+            ]
+        );
+
+        if (Codeforces.getParticipantChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getParticipantChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getContestChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getContestChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getGlobalChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getGlobalChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getUserChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getUserChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getUserShowMessageChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getUserShowMessageChannel(), function(json) {
+                showEventCatcherUserMessage(json);
+            });
+        }
+    }
+
+    Codeforces.setupContestTimes("/group/thOWHpwJb2/data/contests");
+    Codeforces.setupSpoilers();
+    Codeforces.setupTutorials("/data/problemTutorial");
+        });
+    </script>
+
+
+<div id="body">
+        <script type="text/javascript">
+            $(function() {
+                window._ftaa = "78uk0szj9w75r485ce";
+            })
+        </script>
+
+        <script type="text/javascript">
+            $(function() {
+                window._bfaa = "4399711a6d2f9147d2ed935e6b5803a9";
+            });
+        </script>
+            <script type="application/javascript">
+                window.setTimeout(function () {
+                    var url = location.href;
+                    var hashCode32 = Math.abs(url.hashCode()).toString();
+                    var hashCode = "p" + hashCode32 + Math.abs((hashCode32 + url).hashCode());
+                    var pvs = Codeforces.getFromStorage("pvs" + hashCode);
+                    if (!pvs) {
+                        $.post("/data/apv", {
+                            ftaa: window._ftaa,
+                            bfaa: window._bfaa,
+                            url: url
+                        }, function (json) {
+                            if (json["success"] === "true") {
+                                Codeforces.putToStorage("pvs" + hashCode, true);
+                            }
+                        }, "json");
+                    }
+                }, 5000);
+            </script>
+        
+
+<div id="header" style="position: relative;">
+
+    <div style="float:left; max-height: 60px;">
+                <a href="https://codeforces.com/"><img height="65" style="height: 65px;" alt="Codeforces" title="Codeforces" src="./main page_files/codeforces-sponsored-by-ton.png"></a>
+    </div>
+    <div class="lang-chooser">
+            <div style="text-align: right;">
+                <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192?locale=en"><img src="./main page_files/gb.png" title="In English" alt="In English"></a>
+                <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192?locale=ru"><img src="./main page_files/ru.png" title="По-русски" alt="По-русски"></a>
+            </div>
+
+        <div>
+                        <a href="https://codeforces.com/profile/Igor4183">Igor4183</a>
+                     | 
+                        <a href="https://codeforces.com/32e7f75cbf64b8c9bf13cd35bf9ff85a/logout">Выйти</a>
+                    
+        </div>
+
+    </div>
+    <br style="clear: both;">
+</div>
+
+        
+
+
+    <div class="roundbox menu-box borderTopRound borderBottomRound" style="">
+    <div class="menu-list-container">
+    <ul class="menu-list main-menu-list">
+                <li class=""><a href="https://codeforces.com/">Главная</a></li>
+                <li class=""><a href="https://codeforces.com/top">Топ</a></li>
+                <li class=""><a href="https://codeforces.com/catalog">Каталог</a></li>
+                <li class=""><a href="https://codeforces.com/contests">Соревнования</a></li>
+                <li class=""><a href="https://codeforces.com/gyms">Тренировки</a></li>
+                <li class=""><a href="https://codeforces.com/problemset">Архив</a></li>
+                <li class="current"><a href="https://codeforces.com/groups/my">Группы</a></li>
+                <li class=""><a href="https://codeforces.com/ratings">Рейтинг</a></li>
+                <li class=""><a href="https://codeforces.com/edu/courses"><span class="edu-menu-item">Edu</span></a></li>
+                <li class=""><a href="https://codeforces.com/apiHelp">API</a></li>
+                <li class=""><a href="https://codeforces.com/calendar">Календарь</a></li>
+                <li class=""><a href="https://codeforces.com/help">Помощь</a></li>
+    </ul>
+        <form method="post" action="https://codeforces.com/search"><input type="hidden" name="csrf_token" value="28dc53a1bfb2cda64095ed82556088f3">
+            <input class="search" name="query" data-isplaceholder="true" value="">
+        <input type="hidden" name="_tta" value="1004"></form>
+    <br style="clear: both;">
+</div>
+
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("input.search").focus(function () {
+                if ($(this).attr("data-isPlaceholder") === "true") {
+                    $(this).val("");
+                    $(this).removeAttr("data-isPlaceholder");
+                }
+            });
+        });
+    </script>
+        
+<style data-nocturne="true" type="text/css">
+._BlitzInfoFrame_info {
+  margin: 1em;
+  text-align: center;
+  position: relative;
+}
+._BlitzInfoFrame_button {
+  font-size: 1.1rem;
+  position: absolute;
+  top: 8px;
+  right: 1rem;
+}
+</style>
+
+
+<script data-nocturne="true"> $(function () {
+}); </script>
+
+
+            <br style="height: 3em; clear: both;">
+
+        <div style="position: relative;">
+                        <div id="sidebar">
+
+    <div class="roundbox sidebox borderTopRound " style="">
+        <table class="rtable ">
+            <tbody>
+                <tr>
+                            <th class="left" style="width:100%;"><a style="color: black" href="https://codeforces.com/group/thOWHpwJb2">Витебск</a></th>
+                </tr>
+                    <tr>
+                                <td class="left " colspan="1"><span class="contest-state-phase">Закрытая</span></td>
+                    </tr>
+                    <tr>
+                                <td class="left  dark" colspan="1"><span class="contest-state-regular countdown" cdid="i1">Участник</span></td>
+                    </tr>
+                    <tr>
+                                <td class="left bottom" colspan="1"><span>
+    <span>
+            <img style="cursor: pointer" class="toggle-favourite remove-favourite" title="Удалить из избранного" alt="Удалить из избранного" data-type="GROUP" data-entityid="1183" data-size="24" src="./main page_files/star_yellow_24.png">
+    </span>
+
+</span></td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="roundbox sidebox borderTopRound " style="">
+        <div class="caption titled">→ О группе
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="smaller" style="margin: 1em">
+        Хорошая группа. И конкурсы интересные.
+        </div>
+            <hr width="92%">
+            <div class="smaller" style="margin: 1em"><a href="http://lvp37.ru/">Веб-сайт группы</a></div>
+    </div>
+
+<style data-nocturne="true" type="text/css">
+
+</style>
+
+
+    <div class="roundbox sidebox GroupContestsSidebarFrame _GroupContestsSidebarFrame_contests sidebar-menu borderTopRound " style="">
+        <div class="caption titled">→ Соревнования группы         <i class="sidebar-caption-icon las la-angle-down"></i>
+
+            <div class="top-links">
+            </div>
+        </div>
+        <ul style=" " data-page-url="/data/group/member" data-extra-key-0="action" data-extra-value-0="setGroupContestsSidebarFrameCollapsed" data-extra-key-1="groupCode" data-extra-value-1="thOWHpwJb2">
+                <li class="active">
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192">
+Нервоtreapка (топ 5 способов написать трип)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/670627">
+2e5 на лог? Большой налог (деревья отрезков)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/669034">
+я не пойду против OKей, не пойду против себя, я пойду против TL, я пойду против WA(мосты, точки сочленения, топологическая сортировка, КСС)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/668309">
+Лучшие сборы 1: лучше ещё не было (оптимизации ДП: Лишау, Кнут, CHT, Разделяйка)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/668131">
+ААААААААА О ПИНГВИН ПРИВЕТ БРАТОК (потоки + паросочетания))                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/667320">
+Потенциально accepted (конструктивы и жадники от Миши Зайцева)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/665375">
+Посчитайте пж ∫((x^2)*(1+x^2)^(-2))dx                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/667306">
+fft                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/667091">
+Архитектура C++                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/659942">
+Бинарка по Рику Прайм                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/661863">
+День деревьев и отрезков                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/661210">
+Худшие сборы 7: ФИНАЛ                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/655871">
+Худшие сборы 6: хуже уже не будет                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/659397">
+поход в бор: собираем хэш-грибы, ягоды-зэтфункции, ловим корасей                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/661091">
+128(-105)оттенков хардов (LCA,  СНМ, центроиды)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/661090">
+128(-119)+(0.5)оттенков изяков (LCA, СНМ, центроиды)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/657747">
+Криптомания изяков (математика, структуры данных)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/648793">
+Детское программирование - просто взяли и посчитали (ДП)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/648478">
+-У нас контест по матему? -Да. -Слава дипсику? -Слава дипсику                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/645099">
+struct Граф-штурвал {int хи-хи, ха-ха;};                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/648036">
+Дерево Отрезков                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/615633">
+DinamICK ProgrammICK                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/615243">
+показательная                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/615112">
+и кто тут бинапчик?                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/615023">
+Кто ты, воин?                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/614177">
+Дпшка                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/613630">
+Не бейте (пожалуйста)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/606832">
+Новичков нынче, как собак нерезаных, и всё-то они лучше стариков знают!                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/605640">
+Set your maps                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/595833">
+Общий сбор                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/595466">
+Закрытка                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/595258">
+философская жизнь                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/594891">
+cow                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/593897">
+Сборы (точно не нк)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/592939">
+Смесь бульдога с носорогом (и немножко мамонта c матешей) от Яны и Оли                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/593468">
+тыща и одно название (ТРИП)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/593454">
+Решаем баяны (sparse table, МО, корневая декомпозиция)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/591607">
+ВЕЛИКИЕ СБОРЫ(OPEN TEST)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/592763">
+Закрыть гештальт (Жадные алгоритмы)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/587637">
+Самые оригинальные сборы (CHT, Лишао, Лямбда))                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/587796">
+Sofa king contest (точки сочленения, мосты)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/587629">
+Ахо, вы Корасик? (Суффиксный массив)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/587355">
+Тут должна быть строка, но я её забыл (Хэши, Бор, Z-функция, префикс-функция, КМП, Манакер                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/586095">
+СССБОРЫ (ДО разных видов, Фенвик)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/586317">
+PTZ remix                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/586439">
+XOR basis, структура Федосика                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/586161">
+Центроидная декомпозиция и HLD                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/585601">
+2contest (Потоки и паросочетания, Динница, БИТСЕТ)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/585018">
+1contest                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/576655">
+K1R1Т0 УМНЕЕ НАС???                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/570637">
+Дубковская качалка не представляет                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/570366">
+C++: схемы и мемы                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/576424">
+Худшие сборы 5: как стать лгмом за 1 контест                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/572648">
+ICPC chill contest                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/576366">
+погружаемся в конструктивчики?                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/575208">
+весной в лесу очень хорошо))                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/575929">
+Contest Falling Into Place                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/561226">
+November has come                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/562402">
+комок                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/558026">
+Худшие сборы 4: контест для одарённых                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/555201">
+Вам не заплатят за эти задачи                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/555622">
+Деревья, LCA, СНМ                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/556613">
+я ващет гуманитарий                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/526910">
+VitebskOpen Junior                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/527963">
+Бинарка, жадники, bitset                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/510826">
+Качалка 0+                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/528076">
+Теория чисел, битовые маски, комбинаторика, структуры данных                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/527932">
+Джэйкстра, BFS и Краскал                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/511538">
+Огузочный контест                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/511251">
+стоило начать раньше                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/510509">
+(Не)Приятный контест 13.02.2024                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/508146">
+ВВ красавчик                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/508128">
+дискру ботают одни старшаки                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/498158">
+Cборы по Merge Sort Fenwick?                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/507811">
+Легкие времена воспитывают слабых котят (бояны)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/503180">
+Тяжелые времена воспитывают сильных котят (более сложные бояны)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/507626">
+Суффиксный массив!                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/507431">
+-Вы будете доказывать СТБ? -Нет, вы будете решать СТБ                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/498291">
+DP Optimizations                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/498530">
+Enjoy your Treap                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/506300">
+Ботаем дискру - 2                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/506044">
+Ботаем дискру                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/502074">
+( сон or дорешка ) and ( !сон or !дорешка )                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/505230">
+Сборы 20.02.2024                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/505282">
+СБОРЫ НЕ ДЛЯ ГЕРОЕВ ДОРЕШКИ                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/504862">
+Избитые темы                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/498874">
+Как стать ТОП КАЧКОМ БЕЗ ДОНАТА!? Советы для новичков!                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/501344">
+Худшие сборы 3: теория игр и чисел                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/495531">
+Отжиг                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/492493">
+Чилл контест                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/498981">
+Молчание asusa                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/498136">
+РЕАЛЬНО ХУДШИЕ СБОРЫ ОБЛАСТИ                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/496632">
+Учение - путь к умению                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/496362">
+Безгроботное детство                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/490587">
+Графомания(мини версия)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/490588">
+Графомания                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/494599">
+Sbors(для младших)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/491373">
+СМОТРИТЕ Я КЛОУН                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/493570">
+контест по корнячке                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/495353">
+не изолятор ( для младших )                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/494773">
+худшие сборы 2: новогодний атас                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/493069">
+ДП + КОМБА                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/488794">
+Хеши, бор, карась                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/479788">
+GRUPPA 2 CONTEST (div. A)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/479870">
+GRUPPA 2 CONTEST (div. B, основан на творчестве В. Стрыкало)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/472346">
+Подмножества, ДП                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/433420">
+Открытие олимпийского сезона                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/429220">
+Невыносимая Leгкость Дерева                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/431884">
+конструктивы 3500                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/432666">
+Слив VitebskOpen                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/431323">
+Структуры данных, SQRT декомпозиция                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/426424">
+Потоки                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/430241">
+Лучше звоните Коле                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/429608">
+У горадзе, дзе ўсё ілюзорна...                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/427300">
+Графские развалины                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/429084">
+Scoof Junior                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/423381">
+худшие сборы (строки, дп)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/425669">
+OPEN MIND                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/423582">
+dp contest                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/423232">
+Отжиг, структуры данных                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/425504">
+Sig.net tree                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/424952">
+FFT как в американском фильме                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/422866">
+Сборы 01.02.2023                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/424746">
+Федосик, графы                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/424485">
+Xor basis, дерево центроидов                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/424265">
+Мосты. Точки сочленения. Дерево DFS                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/420546">
+Ловим Treap                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/418289">
+Закрытие олимпийского сезона                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/419803">
+Contest of Verilog Enjoyers                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/416788">
+03.01.2022: строки (хэши, префикс-функция, суфмасс)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/419088">
+Самотестирование, ДП по цифрам                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/417814">
+сборы по Мо+                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/418676">
+7 смертных гробов (Битсет, пропих, Дп, отжиг и прочее)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/414895">
+CHT, Li Chao tree, ДП                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/415987">
+ДО. ПерДО. Фенвик. Ordered set.                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/399560">
+контест за 1.38 мин                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/402603">
+Вечер добрый ( строковые алгоритмы )                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/403965">
+ДП. Бинпоиск.                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/399822">
+Графы                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/373963">
+С(т)роки                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/373769">
+Центроидная декомпозиция, дерево центроидов                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/373598">
+Базон Ксорса                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/373366">
+Dynamic CHT, Лямбда-оптимизация и др.                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/373008">
+CHT, Разделяй и властвуй, Оптимизация Кнута и др.                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/372799">
+Контест 12.03.2022                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/371615">
+FFT and Happiness                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/372468">
+Персистентное дерево отрезков                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/372286">
+как ДЕЛАЮТ мешапы                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/367478">
+Сборы 05.02.2022 (суффиксный массив, lcp и др.)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/365734">
+dpp                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/367324">
+Потоки A                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/366990">
+Потоки 03.02.2021                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/366602">
+Динамический контест на динамическое программирование                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/366035">
+Интерактивные задачи                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/366042">
+Задачи с битовым уклоном                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/365535">
+Пробный евротур                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/363203">
+The Big Game Theory                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/362983">
+для маленьких                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/362550">
+zbori                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/362493">
+Высота стола, температура комнаты                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/362524">
+Trip po Piterski                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/362688">
+ZADACHA NA RAZOGREV                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/360852">
+HLD and CND                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/361652">
+Невероятный человек-контест                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/361836">
+до для маленьких                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/361549">
+DZIEŃ DOBRY                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/361500">
+Суффиксное дерево и суффиксный автомат                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/357807">
+Сборы 26.12.2021(Бор, хэши, Z-функция, префикс функция, КМП, комбинаторика)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/347135">
+T_E_S_T                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/350272">
+Дошики, спарсы                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/351594">
+графы(LCA, DSU, DJ)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/349024">
+ДП контест                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/351603">
+Сеты, Мапы, 2 Хеша                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/322911">
+Витебская открытая олимпиада по информатике 2021(6 - 8 классы)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/322912">
+Витебская открытая олимпиада по информатике 2021(8 - 10 класс)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/320790">
+Сборы к респе, графы                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/320213">
+Sos dp, структура Федосика                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/320496">
+НОВЫ АЛЬБОМ АСФІКСІІ ЎЖО Ў СЕТЦЫ!!!                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/319212">
+Контест 16.03.2021                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/319213">
+Лекция 16.03.2021(treap, implicit treap, persistent implicit treap)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/316546">
+Asterix Explanation                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/319081">
+Домашка. ДП по битмаскам.                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/316256">
+Коренное поселение                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/316164">
+HLD                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/316011">
+Центроидка, дерево центроидов                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/315075">
+Сбор Потока                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/315533">
+Strings(ease algos)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/315554">
+08.02.2021                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/315198">
+Сборы 06.02.2021 по Абобе                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/314491">
+Сборы 05.02.2021 (sparse table, Ахо-Корасик и др.)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/314256">
+Сборы 04.02.2021 (суффиксный массив, теория игр и др.)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/314317">
+О всяком                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/314597">
+sbori                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/311377">
+09.01.2021(lca, снм и др)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/311304">
+Сборы 08.01.2021                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/310898">
+HLD, дерево центроидов                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/308208">
+Suffix Array and Aho-Corasick algorithm                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/310689">
+Сборы к области. Трип. Центроидка                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/309999">
+Сессия 30.12.2020                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/309974">
+Искусство пропиха                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/309945">
+Empty                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/308396">
+Fenwick, segment tree                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/301833">
+Классическое тройное совпадение                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/302315">
+Сборы 05.11.2020(детдом)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/302143">
+Роддом                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/301978">
+Сборы 03.11.2020(Утроба)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/272887">
+Мудрый контест                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/271784">
+FLOW                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/272618">
+Сборы к респе. Дп                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/272337">
+Нижняя Lобовая Dеталь                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/272336">
+Бипедализм у ставрикозавра                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/271383">
+Ренессанс                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/271631">
+Сборы к респе. Графы                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/268513">
+Сборы 08.02.2020                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/268368">
+Сборы 07.02.2020                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/268149">
+Сборы к респе 05.02. Два указателя                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/268044">
+Сборы 04.02.2020                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/267879">
+Сборы к респе 03.02.2020                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/265012">
+Простые задачи на дерево отрезков, приоритетную очередь, сеты, ордеред сеты, двусвязные списки(может быть)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/265013">
+Более сложные задачи на дерево отрезков, приоритетную очередь, сеты, ордеред сеты, двусвязные списки                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/265278">
+сборы 09.01.2020                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/265246">
+bp dp tp ba ga                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/265039">
+t.me|markysha                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/264853">
+Markysha не молодец                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/263887">
+Сборы к области 04.01.2020                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/264222">
+Оптимизация дп. CHT                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/264439">
+Изолятор                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/264342">
+not about strings                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/264276">
+Малыши                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/264031">
+Treap                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/258777">
+Sad story (дп)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/257860">
+Экзамен Охотника                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/257815">
+Сборы к району 2019. Строки                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/257841">
+открытая олимпиада кабанского национального царства по информатике                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/257081">
+Контест Руслана                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/240712">
+Сборы 16.03.2019                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/240605">
+Сборы 15.03.2019                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/240496">
+Сборы 14.03.2019                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/240400">
+Сборы 13.03.2019                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/237581">
+пост-граф                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/239078">
+Winter Camp 2019 Markysha Contest #4                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/238255">
+Winter Camp 2019 Markysha Contest #3                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/238181">
+Winter Camp 2019 Markysha Contest #2                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/238126">
+Winter Camp 2019 Markysha Contest #1                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/237758">
+Сборы к респе 2019. Разное                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/237660">
+Сборы к респе 2019. СД                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/237587">
+Сборы к респе 2019. ДП                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/237434">
+Day 2                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/237372">
+Day 1                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/235900">
+Сборы к области 05.01.2019                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/221009">
+Классические задачи для самых маленьких                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/235374">
+качественные задачи и темы интересные                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/231288">
+Сборы. Осень. Финал.                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/231340">
+Сборы осень. Дерево отрезков                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/231337">
+Сборы. Осень. Графы.                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/231785">
+STL                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/231729">
+DSU. Hashing.                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/231359">
+Trie. dp.                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/221693">
+Отжиг                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/221684">
+Сборы 17.03 Фуфел                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/221594">
+Сборы 14.03.2018                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/221548">
+Сборы 13.03.2018                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/221512">
+Сборы 12.03.2018                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/220149">
+Сборы. Пятница.                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/220096">
+sqr sqr sqr sqrt                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/220024">
+Сборы 2018. Дошики.                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/219853">
+Сборы 20!8. Деревья                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/219721">
+Сборы 20!8. Графы                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/219586">
+Сборы 20!8. Строки и не только                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/219716">
+Лучшее из лучшего                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/219683">
+Сборы. Зима. Графы                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/219646">
+Сборы 29.01.2018                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/218133">
+Тренировка Витебск                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/217036">
+Каникулы. 11111100001. ДО                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/216964">
+Контест Руслана                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/216937">
+31.01.2017, вторник. БФС, ДФС, Дейкстры, топологическая сортировка                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/216925">
+Сборы. Осень. СНМ.                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/213650">
+Витебская открытая олимпиада по программированию                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100512">
+2012-2013 Летние Петрозаводские сборы, Andrew Stankevich Contest 42 (ASC 42)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100520">
+2013-2014 Зимние Петрозаводские сборы, Andrew Stankevich Contest 45 (ASC 45)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100518">
+2013-2014 Летние Петрозаводские сборы, Andrew Stankevich Contest 44 (ASC 44)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100517">
+2012-2013 Зимние Петрозаводские сборы, Andrew Stankevich Contest 43 (ASC 43)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/524">
+VK Cup 2015 - Раунд 1                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100524">
+2014-2015 Летние Петрозаводские сборы, Andrew Stankevich Contest 46 (ASC 46)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100886">
+2015-2016 Зимние Петрозаводские сборы, Контест Саратовского ГУ (XVI Открытый Кубок, Гран-При Саратова)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100960">
+2015-2016 Зимние Петрозаводские сборы, Контест Нижегородского ГУ                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100608">
+2014-2015 Зимние Петрозаводские сборы, Andrew Stankevich Contest 47 (ASC 47)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100959">
+2015-2016 Зимние Петрозаводские сборы, Контест Makoto rng_58 Soejima 4                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/212095">
+Сборы 23.02.2017                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100962">
+2015-2016 Зимние Петрозаводские сборы, Контест Moscow SU Trinity                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/212003">
+Сборы 22.02.2017                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/212060">
+Сборы 2к17: ez tasks ez life                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/211863">
+Сборы 2017. День классический                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/211568">
+Сборы 2017. 04 фев                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/211521">
+Сборы 2017. 03 фев                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/211457">
+Сборы 2017. 02 фев                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100138">
+2012-2013 Цикл интернет-олимпиад. Первая личная олимпиада (8 декабря 2012 года)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/211006">
+Витебск. Январь 2017                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/205972">
+Витебск. Утро. Вторник                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100133">
+2012-2013 Тренировка СПбГУ B #17 Строки (по материалам контеста Сергея Копелиовича)                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/205543">
+Потоки                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100181">
+2012-2013 Тренировка СПбГУ C #10. Строки.                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/205540">
+Занимательные строки                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100093">
+2012-2013 Тренировка СПбГУ B #5 Запросы на отрезке, дерево отрезков                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100246">
+2013-2014 Тренировка СПбГУ B #6 Дерево Фенвика                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100249">
+Дерево отрезков                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/100255">
+2013-2014 Тренировка СПбГУ B #7 Групповые операции на дереве отрезков, разреженные таблицы                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/204688">
+Дерево отрезков                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/205138">
+ДП                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/205123">
+Минимальное остовное дерево и СНМ                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/205135">
+Test                    </a>
+                </li>
+                <li>
+                    <a href="https://codeforces.com/group/thOWHpwJb2/contest/204578">
+Архив                    </a>
+                </li>
+        </ul>
+    </div>
+
+<script data-nocturne="true"> $(function () {
+    $(".GroupContestsSidebarFrame .sidebar-caption-icon").click(function() {
+        $(this).toggleClass("la-angle-down la-angle-right");
+        const $target = $(this).parent().next();
+        $target.toggle();
+        const dataPageUrl = $target.attr("data-page-url");
+        const collapsed = $(this).hasClass("la-angle-right");
+        const params = {
+            action: "setCollapsed",
+            sidebarFrameSimpleClassName: "GroupContestsSidebarFrame",
+            collapsed
+        };
+        $.each($target[0].attributes, function(i, a) {
+            const name = a.name;
+            if (name.startsWith("data-extra-key-")) {
+                const key = a.value;
+                const keyIndex = parseInt(name.substring("data-extra-key-".length));
+                params[key] = $target.attr("data-extra-value-" + keyIndex);
+            }
+        });
+        $.post(dataPageUrl, params, function (result) {
+            if (result["success"] !== "true") {
+                Codeforces.showMessage("Не удалось сохранить состояние блока.");
+            }
+        }, "json");
+        return false;
+    });
+}); </script>
+
+
+
+    <div class="roundbox sidebox borderTopRound " style="">
+        <table class="rtable ">
+            <tbody>
+                <tr>
+                            <th class="left" style="width:100%;"><a style="color: black" href="https://codeforces.com/group/thOWHpwJb2/contest/671192">Нервоtreapка (топ 5 способов написать трип)</a></th>
+                </tr>
+                    <tr>
+                                <td class="left  dark" colspan="1"><span class="contest-state-phase">Соревнование идет</span></td>
+                    </tr>
+                    <tr>
+                                <td class="left " colspan="1"><span class="contest-state-regular countdown before-contest-671192-finish" home="//codeforces.com/codeforces.org/s/13701" noredirection="true" textbeforeredirect="Соревнование &quot;Нервоtreapка (топ 5 способов написать трип)&quot; завершено, обновите страницу для просмотра последних изменений" cdid="i2"><span title="8772:20:30">12 месяцев</span></span></td>
+                    </tr>
+                    <tr>
+                                <td class="left  dark" colspan="1"><span class="contest-state-regular">Участник</span></td>
+                    </tr>
+                    <tr>
+                                <td class="left bottom" colspan="1"><span class="contest-state-regular"><center>
+    <span>
+            <img style="cursor: pointer" class="toggle-favourite add-favourite" title="Добавить в избранное" alt="Добавить в избранное" data-type="CONTEST" data-entityid="671192" data-size="24" src="./main page_files/star_gray_24.png">
+    </span>
+
+</center></span></td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="roundbox sidebox borderTopRound " style="">
+        <div class="caption titled">→ Языки
+            <div class="top-links">
+            </div>
+        </div>
+<div style="margin:1em;">
+    <div style="font-size:0.8em;">Только перечисленные языки могут быть использованы для решения задач соревнования</div><div style="font-weight:bold;margin:0.5em 0;font-size:0.8em;text-align:center;">Нервоtreapка (топ 5 способов написать трип):</div>
+<ul class="list" style="font-size:0.8em;margin-top:0.5em;">
+        <li>GNU G++17 7.3.0</li>
+        <li>GNU G++20 13.2 (64 bit, winlibs)</li>
+        <li>GNU G++23 14.2 (64 bit, msys2)</li>
+</ul>
+</div>
+    </div>
+
+
+    <div class="roundbox sidebox borderTopRound " style="">
+        <div class="caption titled">→ О соревновании
+            <div class="top-links">
+            </div>
+        </div>
+            <div class="smaller" style="margin: 1em">
+                Словили трип, а он убежал. И баянов разбросал.
+            </div>
+    </div>
+
+    <!-- ContestResourcesSidebarFrame: hidden. -->
+</div>
+                        <div id="pageContent" class="content-with-sidebar">
+                    <div class="second-level-menu">
+<ul class="second-level-menu-list"><li class="backLava" style="position: absolute; display: block; margin: 0px; padding: 0px; left: 0px; top: 0px; width: 52px; height: 20px;"><div class="leftLava"></div><div class="bottomLava"></div><div class="cornerLava"></div></li>
+        <li class="current selectedLava"><a href="https://codeforces.com/group/thOWHpwJb2/contest/671192">Задачи</a></li>
+        <li><a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/submit">Отослать</a></li>
+        <li><a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/my">Мои посылки</a></li>
+        <li><a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/status">Статус</a></li>
+        <li><a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/standings/groupmates/true">Положение</a></li>
+        <li><a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/customtest">Запуск</a></li>
+</ul>
+</div>
+
+
+<style>
+    .output-only-problem-label {
+        font-size: 1.1rem;
+        color: #8a6d3b;
+        background-color: #fcf8e3;
+        border: 1px solid #e1e1e1;
+        border-radius: 4px;
+        display: inline-block;
+        margin: 0.25rem;
+        padding: 0.25rem;
+    }
+</style>
+
+
+
+<div class="datatable" style="background-color: #E1E1E1; padding-bottom: 3px;">
+            <div class="lt">&nbsp;</div>
+            <div class="rt">&nbsp;</div>
+            <div class="lb">&nbsp;</div>
+            <div class="rb">&nbsp;</div>
+
+            <div style="padding: 4px 0 0 6px;font-size:1.4rem;position:relative;">
+                Задачи
+
+                <div style="position:absolute;right:0.25em;top:0.35em;">
+                    <span style="padding:0;position:relative;bottom:2px;" class="rowCount"></span>
+
+                    <img class="closed" src="./main page_files/magnifier-medium.png">
+
+                    <span class="filter" style="display:none;">
+                        <img class="opened" src="./main page_files/control-270.png">
+                        <input style="padding:0 0 0 20px;position:relative;bottom:2px;border:1px solid #aaa;height:17px;font-size:1.3rem;">
+                    </span>
+                </div>
+            </div>
+            <div style="background-color: white;margin:0.3em 3px 0 3px;position:relative;">
+            <div class="ilt">&nbsp;</div>
+            <div class="irt">&nbsp;</div>
+            <table class="problems">
+
+        <tbody><tr>
+                <th style="width: 4em;" draggable="true" class="top left">№</th>
+            <th draggable="true" class="top">Название</th>
+            <th style="width: 5em;" draggable="true" class="top">&nbsp;</th>
+                    <th style="width: 5em;" draggable="true" class="top right">&nbsp;</th>
+        </tr>
+            <tr class="rejected-problem">
+                <td class="id dark left">
+                        <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/BAZA1">
+                            BAZA1
+                        </a>
+                </td>
+            <td class="dark">
+                <div style="position: relative;">
+                    <div style="float: left;">
+                            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/BAZA1"><!--
+                        -->Трип<!--
+                 --></a><!--
+                 -->
+                    </div>
+                        <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                                    <div>
+                                        стандартный ввод/вывод
+                                    </div>
+                            1 с, 256 МБ
+                        </div>
+                </div>
+            </td>
+            <td class="act dark">
+
+                <span class="act-item">
+            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/submit/BAZA1"><img src="./main page_files/submit-22x22.png" title="Отослать" alt="Отослать"></a>
+        </span>
+
+                        <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img style="cursor: pointer" class="toggle-favourite add-favourite" title="Добавить в избранное" alt="Добавить в избранное" data-type="PROBLEM" data-entityid="3933429" data-size="16" src="./main page_files/star_gray_16.png">
+    </span>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("img.toggle-favourite").click(function () {
+                var size = $(this).attr("data-size");
+                var img = $(this);
+
+                var isFavourite = !img.hasClass("remove-favourite");
+                var type = img.attr("data-type");
+                var entityId = img.attr("data-entityId");
+
+                $.post("/data/favourite",
+                        { entityId: entityId, type: type, isFavourite: isFavourite },
+                        function(response) {
+                            if (response["success"] != "true") {
+                                alert(response["message"]);
+                            } else {
+                                if (img.hasClass("remove-favourite")) {
+                                    img.attr("src", "//codeforces.com/codeforces.org/s/13701/images/icons/star_gray_" + size + ".png");
+                                    img.removeClass("remove-favourite");
+                                    img.addClass("add-favourite");
+                                } else {
+                                    img.attr("src", "//codeforces.com/codeforces.org/s/13701/images/icons/star_yellow_" + size + ".png");
+                                    img.removeClass("add-favourite");
+                                    img.addClass("remove-favourite");
+                                }
+                            }
+                        }, "json"
+                );
+
+                return false;
+            });
+        });
+    </script></span>
+
+            </td>
+                <td style="font-size: 1.1rem;" class="dark right">
+                        <a title="Количество решивших задачу" href="https://codeforces.com/group/thOWHpwJb2/contest/671192/status/BAZA1"><img style="vertical-align: middle;" src="./main page_files/user.png">&nbsp;x17</a>
+                </td>
+            </tr><tr class="accepted-problem">
+                <td class="id left">
+                        <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/BAZA2">
+                            BAZA2
+                        </a>
+                </td>
+            <td>
+                <div style="position: relative;">
+                    <div style="float: left;">
+                            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/BAZA2"><!--
+                        -->Декартово дерево<!--
+                 --></a><!--
+                 -->
+                    </div>
+                        <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                                    <div>
+                                        стандартный ввод/вывод
+                                    </div>
+                            1 с, 256 МБ
+                        </div>
+                </div>
+            </td>
+            <td class="act">
+
+                <span class="act-item">
+            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/submit/BAZA2"><img src="./main page_files/submit-22x22.png" title="Отослать" alt="Отослать"></a>
+        </span>
+
+                        <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img style="cursor: pointer" class="toggle-favourite add-favourite" title="Добавить в избранное" alt="Добавить в избранное" data-type="PROBLEM" data-entityid="3933491" data-size="16" src="./main page_files/star_gray_16.png">
+    </span></span>
+
+            </td>
+                <td style="font-size: 1.1rem;" class="right">
+                        <a title="Количество решивших задачу" href="https://codeforces.com/group/thOWHpwJb2/contest/671192/status/BAZA2"><img style="vertical-align: middle;" src="./main page_files/user.png">&nbsp;x18</a>
+                </td>
+            </tr><tr>
+                <td class="id dark left">
+                        <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/EASY1">
+                            EASY1
+                        </a>
+                </td>
+            <td class="dark">
+                <div style="position: relative;">
+                    <div style="float: left;">
+                            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/EASY1"><!--
+                        -->Дерамида<!--
+                 --></a><!--
+                 -->
+                    </div>
+                        <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                                    <div>
+                                        стандартный ввод/вывод
+                                    </div>
+                            3 с, 256 МБ
+                        </div>
+                </div>
+            </td>
+            <td class="act dark">
+
+                <span class="act-item">
+            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/submit/EASY1"><img src="./main page_files/submit-22x22.png" title="Отослать" alt="Отослать"></a>
+        </span>
+
+                        <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img style="cursor: pointer" class="toggle-favourite add-favourite" title="Добавить в избранное" alt="Добавить в избранное" data-type="PROBLEM" data-entityid="3933465" data-size="16" src="./main page_files/star_gray_16.png">
+    </span></span>
+
+            </td>
+                <td style="font-size: 1.1rem;" class="dark right">
+                        <a title="Количество решивших задачу" href="https://codeforces.com/group/thOWHpwJb2/contest/671192/status/EASY1"><img style="vertical-align: middle;" src="./main page_files/user.png">&nbsp;x17</a>
+                </td>
+            </tr><tr>
+                <td class="id left">
+                        <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/EASY2">
+                            EASY2
+                        </a>
+                </td>
+            <td>
+                <div style="position: relative;">
+                    <div style="float: left;">
+                            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/EASY2"><!--
+                        -->2Д<!--
+                 --></a><!--
+                 -->
+                    </div>
+                        <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                                    <div>
+                                        стандартный ввод/вывод
+                                    </div>
+                            3 с, 512 МБ
+                        </div>
+                </div>
+            </td>
+            <td class="act">
+
+                <span class="act-item">
+            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/submit/EASY2"><img src="./main page_files/submit-22x22.png" title="Отослать" alt="Отослать"></a>
+        </span>
+
+                        <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img style="cursor: pointer" class="toggle-favourite add-favourite" title="Добавить в избранное" alt="Добавить в избранное" data-type="PROBLEM" data-entityid="3933497" data-size="16" src="./main page_files/star_gray_16.png">
+    </span></span>
+
+            </td>
+                <td style="font-size: 1.1rem;" class="right">
+                        <a title="Количество решивших задачу" href="https://codeforces.com/group/thOWHpwJb2/contest/671192/status/EASY2"><img style="vertical-align: middle;" src="./main page_files/user.png">&nbsp;x10</a>
+                </td>
+            </tr><tr>
+                <td class="id dark left">
+                        <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/EASY3">
+                            EASY3
+                        </a>
+                </td>
+            <td class="dark">
+                <div style="position: relative;">
+                    <div style="float: left;">
+                            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/EASY3"><!--
+                        -->Декартач<!--
+                 --></a><!--
+                 --><sup>1</sup>
+                    </div>
+                        <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                                    <div>
+                                        стандартный ввод/вывод
+                                    </div>
+                            5 с, 256 МБ
+                        </div>
+                </div>
+            </td>
+            <td class="act dark">
+
+                <span class="act-item">
+            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/submit/EASY3"><img src="./main page_files/submit-22x22.png" title="Отослать" alt="Отослать"></a>
+        </span>
+
+                        <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img style="cursor: pointer" class="toggle-favourite add-favourite" title="Добавить в избранное" alt="Добавить в избранное" data-type="PROBLEM" data-entityid="3933498" data-size="16" src="./main page_files/star_gray_16.png">
+    </span></span>
+
+            </td>
+                <td style="font-size: 1.1rem;" class="dark right">
+                        <a title="Количество решивших задачу" href="https://codeforces.com/group/thOWHpwJb2/contest/671192/status/EASY3"><img style="vertical-align: middle;" src="./main page_files/user.png">&nbsp;x2</a>
+                </td>
+            </tr><tr>
+                <td class="id left">
+                        <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/MID1">
+                            MID1
+                        </a>
+                </td>
+            <td>
+                <div style="position: relative;">
+                    <div style="float: left;">
+                            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/MID1"><!--
+                        -->Курево<!--
+                 --></a><!--
+                 -->
+                    </div>
+                        <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                                    <div>
+                                        стандартный ввод/вывод
+                                    </div>
+                            8 с, 1024 МБ
+                        </div>
+                </div>
+            </td>
+            <td class="act">
+
+                <span class="act-item">
+            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/submit/MID1"><img src="./main page_files/submit-22x22.png" title="Отослать" alt="Отослать"></a>
+        </span>
+
+                        <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img style="cursor: pointer" class="toggle-favourite add-favourite" title="Добавить в избранное" alt="Добавить в избранное" data-type="PROBLEM" data-entityid="3933493" data-size="16" src="./main page_files/star_gray_16.png">
+    </span></span>
+
+            </td>
+                <td style="font-size: 1.1rem;" class="right">
+                        <a title="Количество решивших задачу" href="https://codeforces.com/group/thOWHpwJb2/contest/671192/status/MID1"><img style="vertical-align: middle;" src="./main page_files/user.png">&nbsp;x10</a>
+                </td>
+            </tr><tr>
+                <td class="id dark left">
+                        <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/MID2">
+                            MID2
+                        </a>
+                </td>
+            <td class="dark">
+                <div style="position: relative;">
+                    <div style="float: left;">
+                            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/MID2"><!--
+                        -->Пиво<!--
+                 --></a><!--
+                 -->
+                    </div>
+                        <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                                    <div>
+                                        стандартный ввод/вывод
+                                    </div>
+                            2 с, 256 МБ
+                        </div>
+                </div>
+            </td>
+            <td class="act dark">
+
+                <span class="act-item">
+            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/submit/MID2"><img src="./main page_files/submit-22x22.png" title="Отослать" alt="Отослать"></a>
+        </span>
+
+                        <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img style="cursor: pointer" class="toggle-favourite add-favourite" title="Добавить в избранное" alt="Добавить в избранное" data-type="PROBLEM" data-entityid="3933592" data-size="16" src="./main page_files/star_gray_16.png">
+    </span></span>
+
+            </td>
+                <td style="font-size: 1.1rem;" class="dark right">
+                        <a title="Количество решивших задачу" href="https://codeforces.com/group/thOWHpwJb2/contest/671192/status/MID2"><img style="vertical-align: middle;" src="./main page_files/user.png">&nbsp;x3</a>
+                </td>
+            </tr><tr>
+                <td class="id left">
+                        <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/MID3">
+                            MID3
+                        </a>
+                </td>
+            <td>
+                <div style="position: relative;">
+                    <div style="float: left;">
+                            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/MID3"><!--
+                        -->Хиппии<!--
+                 --></a><!--
+                 -->
+                    </div>
+                        <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                                    <div>
+                                        стандартный ввод/вывод
+                                    </div>
+                            2 с, 256 МБ
+                        </div>
+                </div>
+            </td>
+            <td class="act">
+
+                <span class="act-item">
+            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/submit/MID3"><img src="./main page_files/submit-22x22.png" title="Отослать" alt="Отослать"></a>
+        </span>
+
+                        <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img style="cursor: pointer" class="toggle-favourite add-favourite" title="Добавить в избранное" alt="Добавить в избранное" data-type="PROBLEM" data-entityid="3933575" data-size="16" src="./main page_files/star_gray_16.png">
+    </span></span>
+
+            </td>
+                <td style="font-size: 1.1rem;" class="right">
+                        <a title="Количество решивших задачу" href="https://codeforces.com/group/thOWHpwJb2/contest/671192/status/MID3"><img style="vertical-align: middle;" src="./main page_files/user.png">&nbsp;x2</a>
+                </td>
+            </tr><tr>
+                <td class="id dark left">
+                        <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/MID4">
+                            MID4
+                        </a>
+                </td>
+            <td class="dark">
+                <div style="position: relative;">
+                    <div style="float: left;">
+                            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/MID4"><!--
+                        -->ДД(t)<!--
+                 --></a><!--
+                 -->
+                    </div>
+                        <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                                    <div>
+                                        стандартный ввод/вывод
+                                    </div>
+                            10 с, 1024 МБ
+                        </div>
+                </div>
+            </td>
+            <td class="act dark">
+
+                <span class="act-item">
+            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/submit/MID4"><img src="./main page_files/submit-22x22.png" title="Отослать" alt="Отослать"></a>
+        </span>
+
+                        <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img style="cursor: pointer" class="toggle-favourite add-favourite" title="Добавить в избранное" alt="Добавить в избранное" data-type="PROBLEM" data-entityid="3933494" data-size="16" src="./main page_files/star_gray_16.png">
+    </span></span>
+
+            </td>
+                <td style="font-size: 1.1rem;" class="dark right">
+                        <a title="Количество решивших задачу" href="https://codeforces.com/group/thOWHpwJb2/contest/671192/status/MID4"><img style="vertical-align: middle;" src="./main page_files/user.png">&nbsp;x2</a>
+                </td>
+            </tr><tr>
+                <td class="id left">
+                        <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/_HARD1">
+                            _HARD1
+                        </a>
+                </td>
+            <td>
+                <div style="position: relative;">
+                    <div style="float: left;">
+                            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/_HARD1"><!--
+                        -->Heа-рево<!--
+                 --></a><!--
+                 -->
+                    </div>
+                        <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                                    <div>
+                                        стандартный ввод/вывод
+                                    </div>
+                            15 с, 1024 МБ
+                        </div>
+                </div>
+            </td>
+            <td class="act">
+
+                <span class="act-item">
+            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/submit/_HARD1"><img src="./main page_files/submit-22x22.png" title="Отослать" alt="Отослать"></a>
+        </span>
+
+                        <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img style="cursor: pointer" class="toggle-favourite add-favourite" title="Добавить в избранное" alt="Добавить в избранное" data-type="PROBLEM" data-entityid="3933495" data-size="16" src="./main page_files/star_gray_16.png">
+    </span></span>
+
+            </td>
+                <td style="font-size: 1.1rem;" class="right">
+                        &nbsp;
+                </td>
+            </tr><tr>
+                <td class="id dark left">
+                        <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/_HARD2">
+                            _HARD2
+                        </a>
+                </td>
+            <td class="dark">
+                <div style="position: relative;">
+                    <div style="float: left;">
+                            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/_HARD2"><!--
+                        -->Бесталковая хіба<!--
+                 --></a><!--
+                 -->
+                    </div>
+                        <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                                    <div>
+                                        стандартный ввод/вывод
+                                    </div>
+                            5 с, 128 МБ
+                        </div>
+                </div>
+            </td>
+            <td class="act dark">
+
+                <span class="act-item">
+            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/submit/_HARD2"><img src="./main page_files/submit-22x22.png" title="Отослать" alt="Отослать"></a>
+        </span>
+
+                        <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img style="cursor: pointer" class="toggle-favourite add-favourite" title="Добавить в избранное" alt="Добавить в избранное" data-type="PROBLEM" data-entityid="3933553" data-size="16" src="./main page_files/star_gray_16.png">
+    </span></span>
+
+            </td>
+                <td style="font-size: 1.1rem;" class="dark right">
+                        &nbsp;
+                </td>
+            </tr><tr>
+                <td class="id bottom left">
+                        <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/_ROPE">
+                            _ROPE
+                        </a>
+                </td>
+            <td class="bottom">
+                <div style="position: relative;">
+                    <div style="float: left;">
+                            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problem/_ROPE"><!--
+                        -->Изгой общества<!--
+                 --></a><!--
+                 --><sup>1</sup>
+                    </div>
+                        <div style="position:absolute;right:0;top:-0.5em;font-size:1rem;padding-top:1px;text-align:right;" class="notice">
+
+                                    <div style="color:black;font-weight:bold">
+                                        movetofront.in / movetofront.out
+                                    </div>
+                            5 с, 256 МБ
+                        </div>
+                </div>
+            </td>
+            <td class="act bottom">
+
+                <span class="act-item">
+            <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/submit/_ROPE"><img src="./main page_files/submit-22x22.png" title="Отослать" alt="Отослать"></a>
+        </span>
+
+                        <span class="act-item" style="position: relative; bottom: 2px;"><span>
+            <img style="cursor: pointer" class="toggle-favourite add-favourite" title="Добавить в избранное" alt="Добавить в избранное" data-type="PROBLEM" data-entityid="3933490" data-size="16" src="./main page_files/star_gray_16.png">
+    </span></span>
+
+            </td>
+                <td style="font-size: 1.1rem;" class="bottom right">
+                        <a title="Количество решивших задачу" href="https://codeforces.com/group/thOWHpwJb2/contest/671192/status/_ROPE"><img style="vertical-align: middle;" src="./main page_files/user.png">&nbsp;x16</a>
+                </td>
+
+            </tr></tbody></table>
+            </div>
+        </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                // Create new ':containsIgnoreCase' selector for search
+                jQuery.expr[':'].containsIgnoreCase = function(a, i, m) {
+                    return jQuery(a).text().toUpperCase()
+                            .indexOf(m[3].toUpperCase()) >= 0;
+                };
+
+                if (window.updateDatatableFilter == undefined) {
+                    window.updateDatatableFilter = function(i) {
+                        var parent = $(i).parent().parent().parent().parent();
+                        $("tr.no-items", parent).remove();
+                        $("tr", parent).hide().removeClass('visible');
+                        var text = $(i).val();
+                        if (text) {
+                            $("tr" + ":containsIgnoreCase('" + text + "')", parent).show().addClass('visible');
+                        } else {
+                            parent.find(".rowCount").text("");
+                            $("tr", parent).show().addClass('visible');
+                        }
+
+                        var found = false;
+                        var visibleRowCount = 0;
+                        $("tr", parent).each(function () {
+                            if (!found) {
+                                if ($(this).find("th").size() > 0) {
+                                    $(this).show().addClass('visible');
+                                    found = true;
+                                }
+                            }
+                            if ($(this).hasClass('visible')) {
+                                visibleRowCount++;
+                            }
+                        });
+                        if (text) {
+                            parent.find(".rowCount").text("Совпадений: " + (visibleRowCount - (found ? 1 : 0)));
+                        }
+                        if (visibleRowCount == (found ? 1 : 0)) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">Нет данных<\/td><\/tr>").appendTo($(parent).find('table'));
+                        }
+                        $(parent).find("tr td").removeClass("dark");
+                        $(parent).find("tr.visible:odd td").addClass("dark");
+                    }
+
+                    $(".datatable .closed").click(function () {
+                        var parent = $(this).parent();
+                        $(this).hide();
+                        $(".filter", parent).fadeIn(function () {
+                            $("input", parent).val("").focus().css("border", "1px solid #aaa");
+                        });
+                    });
+
+                    $(".datatable .opened").click(function () {
+                        var parent = $(this).parent().parent();
+                        $(".filter", parent).fadeOut(function () {
+                            $(".closed", parent).show();
+                            $("input", parent).val("").each(function () {
+                                window.updateDatatableFilter(this);
+                            });
+                        });
+                    });
+
+                    $(".datatable .filter input").keyup(function(e) {
+                        window.updateDatatableFilter(this);
+                        e.preventDefault();
+                        e.stopPropagation();
+                    });
+
+                    $(".datatable table").each(function () {
+                        var found = false;
+                        $("tr", this).each(function () {
+                            if (!found && $(this).find("th").size() == 0) {
+                                found = true;
+                            }
+                        });
+                        if (!found) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">Нет данных<\/td><\/tr>").appendTo(this);
+                        }
+                    });
+
+                    // Applies styles to datatables.
+                    $(".datatable").each(function () {
+                        $(this).find("tr:first th").addClass("top");
+                        $(this).find("tr:last td").addClass("bottom");
+                        $(this).find("tr:odd td").addClass("dark");
+                        $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                        $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                    });
+
+                    $(".datatable table.tablesorter").each(function () {
+                        $(this).bind("sortEnd", function () {
+                            $(".datatable").each(function () {
+                                $(this).find("th, td")
+                                    .removeClass("top").removeClass("bottom")
+                                    .removeClass("left").removeClass("right")
+                                    .removeClass("dark");
+                                $(this).find("tr:first th").addClass("top");
+                                $(this).find("tr:last td").addClass("bottom");
+                                $(this).find("tr:odd td").addClass("dark");
+                                $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                                $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                            });
+                        });
+                    });
+                }
+        });
+    </script>
+
+
+    <div style="text-align: left; font-size: 1.1rem; margin-top: 3px;">
+        <sup>1</sup> Пакет к этой задаче не обновлялся авторами или администрацией Codeforces после смены тестирующих серверов проекта на более быстрые. По этой причине, чтобы сохранить актуальность ограничения по времени, время исполнения решений умножается на два. Например, если ваше решение отработало на сервере за 400 мс, то для определения вердикта и отображения на сайте будет использовано значение 800 мс.
+    </div>
+
+
+    <form id="update-contest-form" action="https://codeforces.com/group/thOWHpwJb2/contest/671192/releaseOrUpdate?action=releaseAndUpdate" method="post" style="display: none;"><input type="hidden" name="csrf_token" value="28dc53a1bfb2cda64095ed82556088f3">
+    <input type="hidden" name="_tta" value="1004"></form>
+    <script type="text/javascript">
+        $(function () {
+            $(".update-contest-link").click(function () {
+                Codeforces.confirm(
+                        "Операция может занять несколько минут. Пожалуйста, не прерывайте процесс и не закрывайте вкладку браузера.<br/><br/>\nВы уверены, что хотите обновить соревнование?",
+                        function () {
+                            $("#update-contest-form").submit();
+                        },
+                        function () {
+                        },
+                        "Да", "Нет"
+                );
+                return false;
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    $("#show-deleted-problems-link-671192").click(function() {
+        $(this).hide();
+        $(".deletedProblems671192").show();
+        return false;
+    });
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+        });
+    </script>
+
+    <div style="text-align: right; font-size: 1.1rem; margin-top: 3px;">
+        <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192/problems">
+            Все задачи
+        </a>
+    </div>
+    <div style="margin-top: 2em;">
+
+<style>
+    .question-answer-by {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        color: #666;
+    }
+
+    .question-requestText-td {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+
+        -ms-word-break: break-all;
+        /* This is the dangerous one in WebKit, as it breaks things wherever */
+        word-break: break-all;
+        /* Instead use this non-standard one: */
+        word-break: break-word;
+
+        /* Adds a hyphen where the word breaks, if supported (No Blink) */
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+
+        text-align: left !important;
+        /*white-space: ;*/
+        width: 20rem;
+    }
+
+    .quick-answer-select {
+        display: none;
+        position: absolute;
+        margin-top: 4px;
+        padding: 0;
+        list-style: none;
+        border: 1px solid #aaa;
+        background: white;
+        width: 300px;
+    }
+
+    .quick-answer-select li {
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+
+    .quick-answer-select li:hover {
+        background: #eee;
+    }
+
+    .hide-question {
+        cursor: pointer;
+    }
+
+    @media (min-width: 1024px) {
+        .answer-question-box table {
+            width: 60em;
+        }
+    }
+    @media (max-width: 1023px) {
+        .answer-question-box table {
+            width: 30em;
+        }
+    }
+
+    .custom-quick-answer {
+        background: var(--highlighted-green-color) !important;
+    }
+</style>
+
+    <div style="position: relative; height: 2em;" class="action-link">
+        <div style="position: absolute; right: 0; margin: 0 0 1em 0;">
+    <img src="./main page_files/add_group.png">
+    <a href="https://codeforces.com/group/thOWHpwJb2/contest/671192#" class="ask-question-link">Задать вопрос?</a>
+        </div>
+    </div>
+
+
+<div class="datatable contest-671192-questions-container" style="background-color: #E1E1E1; padding-bottom: 3px;">
+            <div class="lt">&nbsp;</div>
+            <div class="rt">&nbsp;</div>
+            <div class="lb">&nbsp;</div>
+            <div class="rb">&nbsp;</div>
+
+            <div style="padding: 4px 0 0 6px;font-size:1.4rem;position:relative;">
+                Вопросы по задачам
+
+                <div style="position:absolute;right:0.25em;top:0.35em;">
+                    <span style="padding:0;position:relative;bottom:2px;" class="rowCount"></span>
+
+                    <img class="closed" src="./main page_files/magnifier-medium.png">
+
+                    <span class="filter" style="display:none;">
+                        <img class="opened" src="./main page_files/control-270.png">
+                        <input style="padding:0 0 0 20px;position:relative;bottom:2px;border:1px solid #aaa;height:17px;font-size:1.3rem;">
+                    </span>
+                </div>
+            </div>
+            <div style="background-color: white;margin:0.3em 3px 0 3px;position:relative;">
+            <div class="ilt">&nbsp;</div>
+            <div class="irt">&nbsp;</div>
+            <table class="problem-questions-table">
+<tbody><tr>
+    <th style="width: 2em;" draggable="true" class="top left">&nbsp;</th>
+    <th draggable="true" class="top">Вопрос</th>
+    <th draggable="true" class="top right">Ответ</th>
+</tr>
+<tr class="problem-question broadcast-question" style="font-weight: bold;">
+            <td style="font-size: 65%;" class="dark left">
+                2026-02-11 10:54:54
+                <br>
+            </td>
+            <td class="question-requestText-td monospaced dark">                <div class="question-content"><b>Оповещение</b></div></td>
+<td class="question-requestText-td question-response-td monospaced  dark right">
+        <div class="question-response" data-response-type="TEXT" data-question-id="843858" data-is-announcement="true" data-announcement-response-text="&lt;code style=&quot;font-family: monospace;&quot;&gt;https://youtu.be/p-nX5eYN3mA&amp;nbsp;-&amp;nbsp;лекция&lt;/code&gt;" data-is-contest-quick-answer="false">Общее оповещение<br>*****<br><code style="font-family: monospace;">https://youtu.be/p-nX5eYN3mA&nbsp;-&nbsp;лекция</code></div>
+</td>
+        </tr><tr class="problem-question broadcast-question" style="font-weight: bold;">
+            <td style="font-size: 65%;" class="bottom left">
+                2026-02-11 10:51:29
+                <br>
+            </td>
+            <td class="question-requestText-td monospaced bottom">                <div class="question-content"><b>Оповещение</b></div></td>
+<td class="question-requestText-td question-response-td monospaced  bottom right">
+        <div class="question-response" data-response-type="TEXT" data-question-id="843857" data-is-announcement="true" data-announcement-response-text="&lt;code style=&quot;font-family: monospace;&quot;&gt;Код&amp;nbsp;трип:&lt;br&gt;
+https://pastebin.com/yBBXdPYM&lt;br&gt;
+&lt;br&gt;
+Код&amp;nbsp;implict&amp;nbsp;treap:&lt;br&gt;
+https://pastebin.com/qBCVRpH8&lt;br&gt;
+&amp;nbsp;&lt;br&gt;
+Шапка&amp;nbsp;rope:&lt;br&gt;
+#include&amp;nbsp;&amp;lt;ext/rope&amp;gt;&lt;br&gt;
+using&amp;nbsp;namespace&amp;nbsp;__gnu_cxx;&lt;br&gt;
+&lt;br&gt;
+Операции:&lt;br&gt;
+rope&amp;nbsp;&amp;lt;int&amp;gt;&amp;nbsp;u,&amp;nbsp;v;&lt;br&gt;
+v.substr(l,&amp;nbsp;sz);&lt;br&gt;
+v.erase(l,&amp;nbsp;sz);&lt;br&gt;
+v.insert(id,&amp;nbsp;u);&lt;/code&gt;" data-is-contest-quick-answer="false">Общее оповещение<br>*****<br><code style="font-family: monospace;">Код&nbsp;трип:<br>
+https://pastebin.com/yBBXdPYM<br>
+<br>
+Код&nbsp;implict&nbsp;treap:<br>
+https://pastebin.com/qBCVRpH8<br>
+&nbsp;<br>
+Шапка&nbsp;rope:<br>
+#include&nbsp;&lt;ext/rope&gt;<br>
+using&nbsp;namespace&nbsp;__gnu_cxx;<br>
+<br>
+Операции:<br>
+rope&nbsp;&lt;int&gt;&nbsp;u,&nbsp;v;<br>
+v.substr(l,&nbsp;sz);<br>
+v.erase(l,&nbsp;sz);<br>
+v.insert(id,&nbsp;u);</code></div>
+</td>
+        </tr>
+            </tbody></table>
+            </div>
+        </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                // Create new ':containsIgnoreCase' selector for search
+                jQuery.expr[':'].containsIgnoreCase = function(a, i, m) {
+                    return jQuery(a).text().toUpperCase()
+                            .indexOf(m[3].toUpperCase()) >= 0;
+                };
+
+                if (window.updateDatatableFilter == undefined) {
+                    window.updateDatatableFilter = function(i) {
+                        var parent = $(i).parent().parent().parent().parent();
+                        $("tr.no-items", parent).remove();
+                        $("tr", parent).hide().removeClass('visible');
+                        var text = $(i).val();
+                        if (text) {
+                            $("tr" + ":containsIgnoreCase('" + text + "')", parent).show().addClass('visible');
+                        } else {
+                            parent.find(".rowCount").text("");
+                            $("tr", parent).show().addClass('visible');
+                        }
+
+                        var found = false;
+                        var visibleRowCount = 0;
+                        $("tr", parent).each(function () {
+                            if (!found) {
+                                if ($(this).find("th").size() > 0) {
+                                    $(this).show().addClass('visible');
+                                    found = true;
+                                }
+                            }
+                            if ($(this).hasClass('visible')) {
+                                visibleRowCount++;
+                            }
+                        });
+                        if (text) {
+                            parent.find(".rowCount").text("Совпадений: " + (visibleRowCount - (found ? 1 : 0)));
+                        }
+                        if (visibleRowCount == (found ? 1 : 0)) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">Нет данных<\/td><\/tr>").appendTo($(parent).find('table'));
+                        }
+                        $(parent).find("tr td").removeClass("dark");
+                        $(parent).find("tr.visible:odd td").addClass("dark");
+                    }
+
+                    $(".datatable .closed").click(function () {
+                        var parent = $(this).parent();
+                        $(this).hide();
+                        $(".filter", parent).fadeIn(function () {
+                            $("input", parent).val("").focus().css("border", "1px solid #aaa");
+                        });
+                    });
+
+                    $(".datatable .opened").click(function () {
+                        var parent = $(this).parent().parent();
+                        $(".filter", parent).fadeOut(function () {
+                            $(".closed", parent).show();
+                            $("input", parent).val("").each(function () {
+                                window.updateDatatableFilter(this);
+                            });
+                        });
+                    });
+
+                    $(".datatable .filter input").keyup(function(e) {
+                        window.updateDatatableFilter(this);
+                        e.preventDefault();
+                        e.stopPropagation();
+                    });
+
+                    $(".datatable table").each(function () {
+                        var found = false;
+                        $("tr", this).each(function () {
+                            if (!found && $(this).find("th").size() == 0) {
+                                found = true;
+                            }
+                        });
+                        if (!found) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">Нет данных<\/td><\/tr>").appendTo(this);
+                        }
+                    });
+
+                    // Applies styles to datatables.
+                    $(".datatable").each(function () {
+                        $(this).find("tr:first th").addClass("top");
+                        $(this).find("tr:last td").addClass("bottom");
+                        $(this).find("tr:odd td").addClass("dark");
+                        $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                        $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                    });
+
+                    $(".datatable table.tablesorter").each(function () {
+                        $(this).bind("sortEnd", function () {
+                            $(".datatable").each(function () {
+                                $(this).find("th, td")
+                                    .removeClass("top").removeClass("bottom")
+                                    .removeClass("left").removeClass("right")
+                                    .removeClass("dark");
+                                $(this).find("tr:first th").addClass("top");
+                                $(this).find("tr:last td").addClass("bottom");
+                                $(this).find("tr:odd td").addClass("dark");
+                                $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                                $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                            });
+                        });
+                    });
+                }
+        });
+    </script>
+
+<script type="text/javascript">
+    function toggleQuestionHide() {
+        const $this = $(this);
+        var hidden = $this.hasClass("icon-eye-open"); // Currently shown, going to be hidden
+        var isAnnouncement = $this.attr("data-is-announcement");
+        var questionId = $this.attr("data-question-id");
+
+        var row = $this.parent().parent();
+
+        if (confirm(hidden ? "Вы уверены, что хотите скрыть вопрос по задаче?" : "Вы уверены, что хотите показать вопрос по задаче?")) {
+            $.post("/group/thOWHpwJb2/data/changeProblemQuestionOrAnnouncementDataPage", {
+                action: "changeHiddenForQuestion",
+                contestId: 671192,
+                hidden: hidden,
+                isAnnouncement: isAnnouncement,
+                questionId: questionId
+            }, function (data) {
+                if (data["success"] === "true") {
+                    if (hidden) {
+                        row.addClass("highlighted-row");
+                        $this.removeClass("icon-eye-open").addClass("icon-eye-close").attr("title", "показать");
+                    } else {
+                        row.removeClass("highlighted-row");
+                        $this.addClass("icon-eye-open").removeClass("icon-eye-close").attr("title", "скрыть");
+                    }
+
+                    Codeforces.showMessage(hidden ? "Вопрос по задаче скрыт для всех пользователей" : "Вопрос по задаче виден всем пользователям");
+                } else {
+                    Codeforces.showMessage(data["message"]);
+                }
+            }, "json");
+        }
+
+        return false;
+    }
+
+    function toggleQuestionBroadcast() {
+        var broadcast = $(this).attr("checked");
+        var questionId = $(this).attr("data-question-id");
+
+        if (confirm(broadcast ? "Вы уверены, что хотите публиковать вопрос по задаче?" : "Вы уверены, что не хотите публиковать вопрос по задаче?")) {
+            $.post("/group/thOWHpwJb2/data/changeProblemQuestionOrAnnouncementDataPage", {
+                action: "changeBroadcastForQuestion",
+                contestId: 671192,
+                broadcast: broadcast,
+                questionId: questionId
+            }, function (data) {
+                if (data["success"] === "true") {
+                    Codeforces.reload();
+                    //Codeforces.showMessage(broadcast ? "Вопрос по задаче разослан всем участникам" : "Вопрос по задаче не рассылается участникам");
+                } else {
+                    Codeforces.showMessage(data["message"]);
+                }
+            }, "json");
+        } else {
+            if (broadcast) {
+                $(this).removeAttr("checked");
+            } else {
+                $(this).attr("checked", "true");
+            }
+        }
+
+        return false;
+    }
+
+    $(function () {
+        $(".hide-question").click(toggleQuestionHide);
+        $(".broadcast-question").change(toggleQuestionBroadcast);
+
+        $(".mute-user").click(function () {
+            const handle = $(this).attr("data-handle");
+            const problemQuestionId = $(this).attr("data-problemQuestionId");
+            Codeforces.confirm("Вы уверены, что хотите убрать возможность у '30f8f81dba64e' задавать вопросы в соревнованиях на несколько часов?".replace("30f8f81dba64e", handle),
+                function () {
+                    $.post("/group/thOWHpwJb2/data/answerProblemQuestion", {
+                        action: "muteUser", problemQuestionId: problemQuestionId
+                    }, function (response) {
+                        if (response["success"] === "true") {
+                            Codeforces.showMessage("Пользователь '30f8f81dba64e' теперь временно не может задавать вопросы в соревнованиях".replace("30f8f81dba64e", handle));
+                        }
+                    }, "json");
+                }, function () {
+                });
+            return false;
+        });
+    });
+</script>
+
+<div class="ask-question-box" style="display:none;">
+<h5>Задать вопрос</h5>
+<hr>
+<form method="post" action="https://codeforces.com/group/thOWHpwJb2/contest/671192"><input type="hidden" name="csrf_token" value="28dc53a1bfb2cda64095ed82556088f3">
+    <input type="hidden" name="action" value="questionSubmitted">
+
+    <table class="table-form" style="width: 45em;">
+        <tbody><tr>
+            <td class="field-name">Задача:</td>
+            <td>
+                <select style="width: 25em;" name="submittedProblemIndex">
+                <option value="">Выберите задачу</option>
+                    <option value="BAZA1">BAZA1 - Трип</option>
+                    <option value="BAZA2">BAZA2 - Декартово дерево</option>
+                    <option value="EASY1">EASY1 - Дерамида</option>
+                    <option value="EASY2">EASY2 - 2Д</option>
+                    <option value="EASY3">EASY3 - Декартач</option>
+                    <option value="MID1">MID1 - Курево</option>
+                    <option value="MID2">MID2 - Пиво</option>
+                    <option value="MID3">MID3 - Хиппии</option>
+                    <option value="MID4">MID4 - ДД(t)</option>
+                    <option value="_HARD1">_HARD1 - Heа-рево</option>
+                    <option value="_HARD2">_HARD2 - Бесталковая хіба</option>
+                    <option value="_ROPE">_ROPE - Изгой общества</option>
+                </select>
+            </td>
+        </tr>
+<tr class="subscription-row">
+     <td>&nbsp;</td>
+     <td>
+         <div class="shiftUp error__submittedProblemIndex">
+             <span class="error for__submittedProblemIndex " style="display: none;">&nbsp;</span>
+             <span class="notice for__submittedProblemIndex ">&nbsp;</span>
+         </div>
+     </td>
+</tr>
+
+        <tr>
+            <td class="field-name">Вопрос:</td>
+            <td>
+                <textarea name="question" style="width: calc(100% - 1rem); height: 15em; margin-bottom: 2px;" class="monospaced"></textarea>
+            </td>
+        </tr>
+<tr class="subscription-row">
+     <td>&nbsp;</td>
+     <td>
+         <div class="shiftUp error__question">
+             <span class="error for__question " style="display: none;">&nbsp;</span>
+             <span class="notice for__question ">Максимум 1000 символов&nbsp;</span>
+         </div>
+     </td>
+</tr>
+
+        <tr>
+            <td colspan="2">
+                <div style="text-align: center;">
+                    <input class="submit" type="submit" value="Отослать">
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+<input type="hidden" name="_tta" value="1004"></form>
+</div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+$(".broadcast-question").css("font-weight", "bold");
+
+$(".ask-question-link").click(function () {
+    Codeforces.facebox(".ask-question-box", "//codeforces.com/codeforces.org/s/13701");
+    $("#facebox .ask-question-box .submit").click(function () {
+        Codeforces.clearAjaxFormErrors("#facebox .table-form");
+        var question = $("#facebox textarea[name=question]").val();
+        var submittedProblemIndex = $("#facebox select[name=submittedProblemIndex]").val();
+        $.post("/group/thOWHpwJb2/data/newProblemQuestion",
+            { contestId: 671192, question: question, submittedProblemIndex: submittedProblemIndex },
+            function(data) {
+                var invalid = Codeforces.setAjaxFormErrors("#facebox .table-form", data);
+                if (!invalid) {
+                    $.facebox.close();
+                    Codeforces.reload();
+                }
+            },
+            "json"
+        );
+        return false;
+    });
+    return false;
+});
+        });
+    </script>
+
+<div class="add-announcement-box" style="display: none;">
+<h5>Добавить оповещение</h5>
+<hr>
+<form method="post" action="https://codeforces.com/group/thOWHpwJb2/contest/671192"><input type="hidden" name="csrf_token" value="28dc53a1bfb2cda64095ed82556088f3">
+    <table class="table-form" style="width:45em;">
+        <tbody><tr>
+            <td class="field-name">Задача:</td>
+            <td>
+                <select style="width: 25em;" name="submittedProblemIndex">
+                <option value="">Выберите задачу</option>
+                    <option value="generalAnnouncement" data-problem-name="">Общее оповещение</option>
+                    <option value="BAZA1" data-problem-name="Трип">BAZA1 - Трип</option>
+                    <option value="BAZA2" data-problem-name="Декартово дерево">BAZA2 - Декартово дерево</option>
+                    <option value="EASY1" data-problem-name="Дерамида">EASY1 - Дерамида</option>
+                    <option value="EASY2" data-problem-name="2Д">EASY2 - 2Д</option>
+                    <option value="EASY3" data-problem-name="Декартач">EASY3 - Декартач</option>
+                    <option value="MID1" data-problem-name="Курево">MID1 - Курево</option>
+                    <option value="MID2" data-problem-name="Пиво">MID2 - Пиво</option>
+                    <option value="MID3" data-problem-name="Хиппии">MID3 - Хиппии</option>
+                    <option value="MID4" data-problem-name="ДД(t)">MID4 - ДД(t)</option>
+                    <option value="_HARD1" data-problem-name="Heа-рево">_HARD1 - Heа-рево</option>
+                    <option value="_HARD2" data-problem-name="Бесталковая хіба">_HARD2 - Бесталковая хіба</option>
+                    <option value="_ROPE" data-problem-name="Изгой общества">_ROPE - Изгой общества</option>
+                </select>
+            </td>
+        </tr>
+<tr class="subscription-row">
+     <td>&nbsp;</td>
+     <td>
+         <div class="shiftUp error__submittedProblemIndex">
+             <span class="error for__submittedProblemIndex " style="display: none;">&nbsp;</span>
+             <span class="notice for__submittedProblemIndex ">&nbsp;</span>
+         </div>
+     </td>
+</tr>
+
+        <tr style="display: none; font-size: 0.7em;">
+            <td>&nbsp;</td>
+            <td>
+                <input type="checkbox" checked="checked" name="announceInPairContest">
+                <span class="notice pairProblemNotice" style="display: none; position: relative; top: -2px;">Add a copy of announcement for problem <span class="pairProblem"></span></span>
+                <span class="notice pairContestNotice" style="display: none; position: relative; top: -2px;">Добавить копию оповещения в контест <span class="pairContest"></span></span>
+            </td>
+        </tr>
+<tr class="subscription-row">
+     <td>&nbsp;</td>
+     <td>
+         <div class="shiftUp error__announceInPairContest">
+             <span class="error for__announceInPairContest " style="display: none;">&nbsp;</span>
+             <span class="notice for__announceInPairContest ">&nbsp;</span>
+         </div>
+     </td>
+</tr>
+
+        <tr class="subscription-row">
+            <td>&nbsp;</td>
+            <td>
+                <span class="notice shiftUp" style="word-break: break-word;">Поля ниже будут интерпретированы как простой текст.</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="field-name">Текст на английском языке:</td>
+            <td>
+                <textarea name="englishText" class="bottom-space-small monospaced" style="width: 80%; height: 10em;"></textarea>
+            </td>
+        </tr>
+<tr class="subscription-row">
+     <td>&nbsp;</td>
+     <td>
+         <div class="shiftUp error__englishText">
+             <span class="error for__englishText " style="display: none;">&nbsp;</span>
+             <span class="notice for__englishText ">&nbsp;</span>
+         </div>
+     </td>
+</tr>
+
+        <tr>
+            <td class="field-name">Текст на русском языке:</td>
+            <td>
+                <textarea name="russianText" class="bottom-space-small monospaced" style="width: 80%; height: 10em;"></textarea>
+            </td>
+        </tr>
+<tr class="subscription-row">
+     <td>&nbsp;</td>
+     <td>
+         <div class="shiftUp error__russianText">
+             <span class="error for__russianText " style="display: none;">&nbsp;</span>
+             <span class="notice for__russianText ">&nbsp;</span>
+         </div>
+     </td>
+</tr>
+
+        <tr>
+            <td class="field-name">Адресат:</td>
+            <td>
+                <input class="targetUserHandle" name="targetUserHandle" style="width: 15em;">
+            </td>
+        </tr>
+<tr class="subscription-row">
+     <td>&nbsp;</td>
+     <td>
+         <div class="shiftUp error__targetUserHandle">
+             <span class="error for__targetUserHandle " style="display: none;">&nbsp;</span>
+             <span class="notice for__targetUserHandle ">Оставьте пустым, если хотите разослать сообщение всем участникам&nbsp;</span>
+         </div>
+     </td>
+</tr>
+
+        <tr>
+            <td colspan="2">
+                <div style="text-align: center;">
+                    <input class="submit" type="submit" value="Отослать">
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+<input type="hidden" name="_tta" value="1004"></form>
+</div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+        });
+    </script>
+
+    </div>
+                </div>
+        </div>
+            <br style="clear: both;">
+            <div id="footer">
+                <div><a href="https://codeforces.com/">Codeforces</a> (c) Copyright 2010-2026 Михаил Мирзаянов</div>
+                <div>Соревнования по программированию 2.0</div>
+                    <div>Время на сервере: 11.02.2026 21:39:36 (h1).</div>
+                    <div>Десктопная версия, переключиться на <a rel="nofollow" class="switchToMobile" href="https://codeforces.com/group/thOWHpwJb2/contest/671192?mobile=true">мобильную</a>.</div>
+                <div class="smaller">
+                    <a href="https://codeforces.com/privacy">Privacy Policy</a>
+                    |
+                    <a href="https://codeforces.com/terms">Terms and Conditions</a>
+                </div>
+
+                    <div style="margin-top: 25px;">
+                        При поддержке
+                    </div>
+                    <div class="footer-logo-div footer-logo-div-ru" style="">
+                        <a href="https://ton.org/"><img style="margin-right: 2em; width: 60px;" src="./main page_files/ton-100x100.png" alt="TON" title="TON"></a>
+                        <div class="sep">&nbsp;</div>
+                        <a href="https://itmo.ru/ru/" class="itmo-logo"><img style="width: 140px;" src="./main page_files/itmo_small_ru-logo.png" alt="Университет ИТМО" title="Университет ИТМО"></a>
+                    </div>
+            </div>
+        <script type="text/javascript">
+            $(function() {
+                $(".switchToMobile").click(function() {
+                    Codeforces.redirect(Codeforces.updateUrlParameter(document.location.href, "mobile", "true"));
+                    return false;
+                });
+                $(".switchToDesktop").click(function() {
+                    Codeforces.redirect(Codeforces.updateUrlParameter(document.location.href, "mobile", "false"));
+                    return false;
+                });
+            });
+        </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if ($(window).width() < 1600) {
+                $('.button-up').css('width', '30px').css('line-height', '30px').css('font-size', '20px');
+            }
+
+            if ($(window).width() >= 1200) {
+                $ (window).scroll (function () {
+                    if ($ (this).scrollTop () > 100) {
+                        $ ('.button-up').fadeIn();
+                    } else {
+                        $ ('.button-up').fadeOut();
+                    }
+                });
+
+                $('.button-up').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 500);
+                    return false;
+                });
+
+                $('.button-up').hover(function () {
+                    $(this).animate({
+                        'opacity':'1'
+                    }).css({'background-color':'#e7ebf0','color':'#6a86a4'});
+                }, function () {
+                    $(this).animate({
+                        'opacity':'0.7'
+                    }).css({'background':'none','color':'#d3dbe4'});;
+                });
+            }
+
+            Codeforces.focusOnError();
+
+            Codeforces.setCopiedToClipboardText("Copied to clipboard");
+            Codeforces.listenCopyable();
+        });
+    </script>
+    <div class="userListsFacebox" style="display:none;">
+        <div style="padding: 0.5em; width: 600px; max-height: 200px; overflow-y: auto">
+<div class="datatable" style="background-color: #E1E1E1; padding-bottom: 3px;">
+            <div class="lt">&nbsp;</div>
+            <div class="rt">&nbsp;</div>
+            <div class="lb">&nbsp;</div>
+            <div class="rb">&nbsp;</div>
+
+            <div style="padding: 4px 0 0 6px;font-size:1.4rem;position:relative;">
+                Списки пользователей
+
+                <div style="position:absolute;right:0.25em;top:0.35em;">
+                    <span style="padding:0;position:relative;bottom:2px;" class="rowCount"></span>
+
+                    <img class="closed" src="./main page_files/magnifier-medium.png">
+
+                    <span class="filter" style="display:none;">
+                        <img class="opened" src="./main page_files/control-270.png">
+                        <input style="padding:0 0 0 20px;position:relative;bottom:2px;border:1px solid #aaa;height:17px;font-size:1.3rem;">
+                    </span>
+                </div>
+            </div>
+            <div style="background-color: white;margin:0.3em 3px 0 3px;position:relative;">
+            <div class="ilt">&nbsp;</div>
+            <div class="irt">&nbsp;</div>
+            <table class="">
+                <thead>
+                <tr>
+                    <th draggable="true" class="top left right">Название</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="no-items visible"><td style="text-align:left;" colspan="32" class="bottom dark left right">Нет данных</td></tr></tbody>
+            </table>
+            </div>
+        </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                // Create new ':containsIgnoreCase' selector for search
+                jQuery.expr[':'].containsIgnoreCase = function(a, i, m) {
+                    return jQuery(a).text().toUpperCase()
+                            .indexOf(m[3].toUpperCase()) >= 0;
+                };
+
+                if (window.updateDatatableFilter == undefined) {
+                    window.updateDatatableFilter = function(i) {
+                        var parent = $(i).parent().parent().parent().parent();
+                        $("tr.no-items", parent).remove();
+                        $("tr", parent).hide().removeClass('visible');
+                        var text = $(i).val();
+                        if (text) {
+                            $("tr" + ":containsIgnoreCase('" + text + "')", parent).show().addClass('visible');
+                        } else {
+                            parent.find(".rowCount").text("");
+                            $("tr", parent).show().addClass('visible');
+                        }
+
+                        var found = false;
+                        var visibleRowCount = 0;
+                        $("tr", parent).each(function () {
+                            if (!found) {
+                                if ($(this).find("th").size() > 0) {
+                                    $(this).show().addClass('visible');
+                                    found = true;
+                                }
+                            }
+                            if ($(this).hasClass('visible')) {
+                                visibleRowCount++;
+                            }
+                        });
+                        if (text) {
+                            parent.find(".rowCount").text("Совпадений: " + (visibleRowCount - (found ? 1 : 0)));
+                        }
+                        if (visibleRowCount == (found ? 1 : 0)) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">Нет данных<\/td><\/tr>").appendTo($(parent).find('table'));
+                        }
+                        $(parent).find("tr td").removeClass("dark");
+                        $(parent).find("tr.visible:odd td").addClass("dark");
+                    }
+
+                    $(".datatable .closed").click(function () {
+                        var parent = $(this).parent();
+                        $(this).hide();
+                        $(".filter", parent).fadeIn(function () {
+                            $("input", parent).val("").focus().css("border", "1px solid #aaa");
+                        });
+                    });
+
+                    $(".datatable .opened").click(function () {
+                        var parent = $(this).parent().parent();
+                        $(".filter", parent).fadeOut(function () {
+                            $(".closed", parent).show();
+                            $("input", parent).val("").each(function () {
+                                window.updateDatatableFilter(this);
+                            });
+                        });
+                    });
+
+                    $(".datatable .filter input").keyup(function(e) {
+                        window.updateDatatableFilter(this);
+                        e.preventDefault();
+                        e.stopPropagation();
+                    });
+
+                    $(".datatable table").each(function () {
+                        var found = false;
+                        $("tr", this).each(function () {
+                            if (!found && $(this).find("th").size() == 0) {
+                                found = true;
+                            }
+                        });
+                        if (!found) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">Нет данных<\/td><\/tr>").appendTo(this);
+                        }
+                    });
+
+                    // Applies styles to datatables.
+                    $(".datatable").each(function () {
+                        $(this).find("tr:first th").addClass("top");
+                        $(this).find("tr:last td").addClass("bottom");
+                        $(this).find("tr:odd td").addClass("dark");
+                        $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                        $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                    });
+
+                    $(".datatable table.tablesorter").each(function () {
+                        $(this).bind("sortEnd", function () {
+                            $(".datatable").each(function () {
+                                $(this).find("th, td")
+                                    .removeClass("top").removeClass("bottom")
+                                    .removeClass("left").removeClass("right")
+                                    .removeClass("dark");
+                                $(this).find("tr:first th").addClass("top");
+                                $(this).find("tr:last td").addClass("bottom");
+                                $(this).find("tr:odd td").addClass("dark");
+                                $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                                $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                            });
+                        });
+                    });
+                }
+        });
+    </script>
+        </div>
+    </div>
+    <script type="application/javascript">
+        $(function() {
+            $(".userListMarker").click(function() {
+                $.post("/data/lists", {action: "findTouched"}, function(json) {
+                    Codeforces.facebox(".userListsFacebox");
+                    var tbody = $("#facebox tbody");
+                    tbody.empty();
+                    for (var i in json) {
+                        tbody.append(
+                            $("<tr></tr>").append(
+                                $("<td></td>").attr("data-readKey", json[i].readKey).text(json[i].name)
+                            )
+                        );
+                    }
+                    Codeforces.updateDatatables();
+                    tbody.find("td").css("cursor", "pointer").click(function() {
+                        document.location = Codeforces.updateUrlParameter(document.location.href, "list", $(this).attr("data-readKey"));
+                    });
+                }, "json");
+            });
+        });
+    </script>
+</div>
+    <script type="application/javascript">
+        if ('serviceWorker' in navigator && 'fetch' in window && 'caches' in window) {
+            navigator.serviceWorker.register('/service-worker-13701.js')
+                .then(function (registration) {
+                    console.log('Service worker registered: ', registration);
+                })
+                .catch(function (error) {
+                    console.log('Registration failed: ', error);
+                });
+        }
+    </script>
+<script defer="" src="./main page_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;316c29dfa3804effb5a91c52a59b5bd0&quot;,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+
+<div id="datepick-div" style="display: none;"></div><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none; padding-bottom: 42px; padding-right: 42px;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px; margin: 0px;"><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; min-width: 0px; max-width: none; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-size-adjust: none; font-family: STIXSizeOneSym, sans-serif;"></div></div><veepn-lock-screen><template shadowrootmode="open"><style>html{box-sizing:border-box;text-size-adjust:100%;word-break:normal;tab-size:4}*,:before,:after{background-repeat:no-repeat;box-sizing:border-box}:before,:after{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0}hr{overflow:visible;height:0;color:inherit;border:0;border-top:1px solid}details,main{display:block}summary{display:list-item}small{font-size:80%}[hidden]{display:none!important}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}a{background-color:transparent}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace}pre{font-size:1em}b,strong{font-weight:bolder}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-color:inherit;text-indent:0}iframe{border-style:none}input{border-radius:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit;color:inherit}optgroup{font-weight:700}button{overflow:visible}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit],[role=button]{cursor:pointer}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button,html [type=button],[type=reset],[type=submit]{appearance:auto}button,input,select,textarea{background-color:transparent;border-style:none}button:-moz-focusring,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{outline:1px dotted ButtonText}select{appearance:none}a:focus,button:focus,input:focus,select:focus,textarea:focus{outline-width:0}select::-ms-expand{display:none}select::-ms-value{color:currentcolor}legend{border:0;color:inherit;display:table;white-space:normal;max-width:100%}::-webkit-file-upload-button{appearance:auto;color:inherit;font:inherit}[disabled]{cursor:default}img{border-style:none}progress{vertical-align:baseline}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled=true]{cursor:default}ul,ol{list-style-type:none}figure{margin:0}@keyframes slide-in{0%{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}.gradient-blue{background:radial-gradient(106.41% 128.47% at 50.15% 128.47%,#23abff,#3066ff)}.gradient-green{background:radial-gradient(92.26% 118.88% at 50.15% .13%,#00c3c3,#00aab3)}.gradient-purple{background:radial-gradient(165.12% 115.56% at 50.15% .13%,#a15aff,#00a0eb)}.bg-blue{background-color:#f2f5ff}.bg-purple{background-color:#f7f0ff}.bg-green{background-color:#ebffed}.lock-screen{font-family:FigtreeVF,sans-serif;letter-spacing:normal;position:fixed;z-index:2147483638;right:24px;bottom:24px;width:327px;border-radius:24px;overflow:hidden;box-shadow:0 24px 32px #00000014;animation:slide-in .3s ease-in-out forwards}.lock-screen__content{position:relative;padding:24px 24px 64px}.lock-screen__close{position:absolute;top:16px;right:16px;width:24px;height:24px;display:flex;align-items:center;justify-content:center;opacity:.5}.lock-screen__label{height:26px;width:fit-content;border-radius:50px;background-color:#fff3;padding-inline:16px;display:flex;align-items:center;justify-content:center;gap:8px;color:#fff;font-size:12px;line-height:18px;margin:-8px auto 16px}.lock-screen__title{color:#fff;text-align:center;font-size:20px;line-height:28px;font-weight:600;margin-bottom:8px}.lock-screen__description{color:#f5f6f7;text-align:center;font-size:14px;line-height:20px}.lock-screen__description b{font-weight:600}.lock-screen__card{position:relative;z-index:1;margin-top:-44px;background-color:#fff;border-radius:24px;padding:32px 20px 20px}.lock-screen__inner{margin-bottom:24px}.lock-screen__submit{display:flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:16px;height:40px;width:100%;border-radius:12px;padding-inline:16px;background-color:#f70;color:#fff;margin-bottom:16px}.lock-screen__skip{display:flex;align-items:center;justify-content:center;font-size:14px;line-height:20px;color:#82829c;margin-inline:auto}.price-card{border:1px solid #f2f2fc;background:linear-gradient(254.14deg,#fafbff .04%,#f5f8ff 100.04%);border-radius:24px;padding:24px 28px}.price-card__label{color:#4a5764;text-align:center;font-size:14px;line-height:20px;text-transform:uppercase;margin-bottom:16px}.price-card__price{display:flex;justify-content:center;align-items:flex-start;column-gap:2px;margin-bottom:12px}.price-card__currency{color:#515478;font-size:18px;line-height:28px}.price-card__number{color:#14142a;text-align:center;font-size:64px;line-height:54px}.price-card__wrap{display:flex;flex-direction:column}.price-card__decimal{color:#515478;font-size:18px;line-height:28px;font-weight:600}.price-card__period{color:#515478;font-size:14px;line-height:20px;margin-top:-6px}.price-card__discount{position:relative;display:flex;align-items:center;justify-content:center;margin-bottom:12px}.price-card__discount-divider{position:absolute;z-index:0;top:50%;left:0;width:100%;height:1px;background-color:#dbe2f9;transform:translateY(-50%)}.price-card__discount-icon{position:absolute;z-index:1;top:50%;left:50%;transform:translate(-50%,-50%)}.price-card__discount-text{position:relative;z-index:2;color:#fff;font-size:12px;font-weight:600;line-height:18px}.price-card__features{display:flex;align-items:center;justify-content:center;column-gap:16px}.price-card__feature{color:#222e3a;font-size:14px;line-height:20px;display:flex;align-items:center;gap:6px}.price-card__feature:before{content:"";display:block;width:4px;height:4px;background-color:#20df9e;border-radius:50%;flex-shrink:0}.features-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.features-list__item{display:flex;flex-direction:column;align-items:center;gap:6px}.features-list__icon{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center}.features-list__text{color:#293a53;text-align:center;font-size:16px;line-height:24px;letter-spacing:-.1px}</style></template><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style></veepn-lock-screen></body></html>
